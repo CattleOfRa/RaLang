@@ -2,10 +2,9 @@
 
 Author:	 		Daniel Pacheco
 Start Date:	 	18/03/2016
-Description:	A compiler for RaLang written in clojure to compile source code
-				into JVM bytecode.
+Description:	A compiler for RaLang written in clojure to compile source code into JVM bytecode.
 
-### To-do ###
+# To-do
 Last updated: 18/03/2016
 
 [ ] Check if source file exists
