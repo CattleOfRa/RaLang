@@ -1,0 +1,11 @@
+class "HelloWorld"
+
+#print "Hello World"
+
+age = 2+3*5 # this is a comment
+
+#define sum(int a, int b, int):
+
+#       return a + b
+
+#print sum(2, 3)

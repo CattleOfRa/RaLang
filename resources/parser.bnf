@@ -1,0 +1,22 @@
+token		::= class | factor;
+
+space		::= #'\s*';
+space_alo	::= #'\s+'; (* At Least One *)
+
+expr		::= expr add term | expr sub term | <space> term <space>;
+term		::= term mul factor | term div factor | <space> factor <space>;
+factor		::= num | '(' expr ')' | variable;
+
+datatype	::= "int" | "float"
+<int>		::= #'-?\d+';
+<float>		::= #'-?\d+\.\d+';
+num 		::= int | float;
+keyword		::= #'\w+';
+
+add 		::= <space> "+" <space>;
+sub 		::= <space> "-" <space>;
+mul 		::= <space> "*" <space>;
+div 		::= <space> "/" <space>;
+
+class		::= <"class"> <space_alo> <"\""> #'\w+' <"\"">;
+variable	::= datatype <space_alo> keyword <space> <#'='> <space> expr;
