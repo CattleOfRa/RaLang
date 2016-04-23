@@ -21,23 +21,27 @@
     (number? x) x
     :else (look (x 1)))))
 
-(defn debugMessage [message]
+(defn debugMessage
   "Shows debugging messages."
+  [message]
   (println (string/join message)))
 
-(defn write [bytecode]
+(defn write
   "Write bytecode to the output file."
+  [bytecode]
   (spit outputFile bytecode :append true))
 
-(defn tokenReader [token]
+(defn tokenReader
   "Reads a token."
+  [token]
   (def t (parser token))
   (println (apply array-map t))
   (comment (insta/visualize t))
   (println (second t)))
 
-(defn removeEmptyLineOrComment [source]
+(defn removeEmptyLineOrComment
   "Find and remove empty lines and comments from the source code."
+  [source]
   (def reComment #"\s*#.*")
   (def sourceWithoutComment (clojure.string/replace source reComment ""))
   (def reEmptyLine #"^\s*$")
@@ -46,16 +50,18 @@
     (= (re-find matchEmptyLine) true) source
     :else sourceWithoutComment))
 
-(defn readSource [file]
+(defn readSource
   "Read source file and remove empty lines."
+  [file]
   (with-open [rdr (reader file)]
     (def source
       (for [line (line-seq rdr)] (removeEmptyLineOrComment line)))
     (doseq [x (remove empty? source)]
       (tokenReader x))))
 
-(defn checkSource [file]
+(defn checkSource
   "Check if source file exists."
+  [file]
   (debugMessage ["Reading '" file "'"])
   (cond
     (.exists (as-file file)) (readSource file)
@@ -66,9 +72,4 @@
   [& args]
   (cond
     (= (count args) 1) (checkSource (nth args 0))
-    :else (println "Wrong number of arguments."))
-  
-  (comment
-    (def f (parser "age = 20 + (3 - 5)"))
-    (insta/visualize f)
-    (walk/postwalk #(do (println %) %) f)))
+    :else (println "Wrong number of arguments.")))
