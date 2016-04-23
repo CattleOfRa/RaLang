@@ -2,9 +2,6 @@
   (:use [clojure.algo.generic.functor :only (fmap)])
   (:use [clojure.java.io])
   (:require [clojure.string :as string])
-  (comment (:require [clojure.edn]))
-  (comment (:require [rhizome.dot]))
-  (comment (:require [rhizome.viz]))
   (:require [instaparse.core :as insta])
   (:require [clojure.walk :as walk])
   (:gen-class))
@@ -25,12 +22,22 @@
   [bytecode]
   (spit outputFile bytecode :append true))
 
+(defn genClass
+  "Generates a class"
+  [name]
+  (println ".class public" (read-string name))
+  (println ".super java/lang/Object")
+  (println ".method public <init>()V)"))
+
 (defn tokenReader
   "Reads a token."
   [token]
-  (def t (parser token))
-  (println (apply array-map t))
-  (println (second t)))
+  (def tkey (first token))
+  (def tval (second token))
+  (case tkey
+    :token (tokenReader tval)
+    :class (genClass tval)
+    (println "Not recognised")))
 
 (defn removeEmptyLineOrComment
   "Find and remove empty lines and comments from the source code."
@@ -50,7 +57,7 @@
     (def source
       (for [line (line-seq rdr)] (removeEmptyLineOrComment line)))
     (doseq [x (remove empty? source)]
-      (tokenReader x))))
+      (tokenReader (parser x)))))
 
 (defn checkSource
   "Check if source file exists."
