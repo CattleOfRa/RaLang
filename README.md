@@ -13,7 +13,7 @@ Last updated: 23/04/2016
   <li>[X] Implement lexer and parser</li>
   <li>[ ] Code generation
     <ul>
-      <li>[ ] A class</li>
+      <li>[X] A class</li>
       <li>[ ] Print to the console</li>
     </ul>
   </li>
