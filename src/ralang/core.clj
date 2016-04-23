@@ -15,12 +15,6 @@
   "EBFN parser for RaLang."
   (insta/parser (clojure.java.io/resource "parser.bnf")))
 
-(comment (defn look [x]
-  (println x)
-  (cond
-    (number? x) x
-    :else (look (x 1)))))
-
 (defn debugMessage
   "Shows debugging messages."
   [message]
@@ -36,7 +30,6 @@
   [token]
   (def t (parser token))
   (println (apply array-map t))
-  (comment (insta/visualize t))
   (println (second t)))
 
 (defn removeEmptyLineOrComment

@@ -7,6 +7,9 @@ Description:	A compiler for RaLang written in clojure to compile source code int
 # To-do
 Last updated: 18/03/2016
 
-[ ] Check if source file exists<br />
-[ ] Reading source file<br />
-[ ] Implement lexer and parser to enable creating a function<br />
+[X] Check if source file exists<br />
+[X] Reading source file<br />
+[X] Implement lexer and parser<br />
+[ ] Code generation<br />
+    [ ] A class<br />
+    [ ] Print to the console<br />
