@@ -27,7 +27,11 @@
   [name]
   (println ".class public" (read-string name))
   (println ".super java/lang/Object")
-  (println ".method public <init>()V)"))
+  (println ".method public <init>()V)")
+  (println "aload_0")
+  (println "invokespecial java/lang/Object/<init>()V")
+  (println "return")
+  (println ".end method"))
 
 (defn tokenReader
   "Reads a token."
@@ -37,7 +41,7 @@
   (case tkey
     :token (tokenReader tval)
     :class (genClass tval)
-    (println "Not recognised")))
+    (println tval)))
 
 (defn removeEmptyLineOrComment
   "Find and remove empty lines and comments from the source code."

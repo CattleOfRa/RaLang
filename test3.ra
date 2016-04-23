@@ -1,0 +1,4 @@
+class "HelloWorld"
+
+define main():
+    print "Hello World"
