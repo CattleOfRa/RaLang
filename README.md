@@ -18,6 +18,7 @@ Last updated: 24/04/2016
       <li>[ ] Print to the console</li>
       <li>[ ] Perform basic calculations</li>
       <li>[ ] Generate conditions/if branches</li>
+      <li>[ ] Support for variables</li>
     </ul>
   </li>
   <li>[ ] Testing compiler
