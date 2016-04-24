@@ -4,9 +4,8 @@
   (:require [clojure.string :as string])
   (:require [instaparse.core :as insta])
   (:require [clojure.walk :as walk])
+  (:require [ralang.gen :as gen])
   (:gen-class))
-
-(def outputFile "output.ra")
 
 (def parser
   "EBFN parser for RaLang."
@@ -17,22 +16,6 @@
   [message]
   (println (string/join message)))
 
-(defn write
-  "Write bytecode to the output file."
-  [bytecode]
-  (spit outputFile bytecode :append true))
-
-(defn genClass
-  "Generates a class"
-  [name]
-  (println ".class public" (read-string name))
-  (println ".super java/lang/Object")
-  (println ".method public <init>()V)")
-  (println "aload_0")
-  (println "invokespecial java/lang/Object/<init>()V")
-  (println "return")
-  (println ".end method"))
-
 (defn tokenReader
   "Reads a token."
   [token]
@@ -40,8 +23,8 @@
   (def tval (second token))
   (case tkey
     :token (tokenReader tval)
-    :class (genClass tval)
-    (println tval)))
+    :class (gen/genClass tval)
+    (println "Not recognised.")))
 
 (defn removeEmptyLineOrComment
   "Find and remove empty lines and comments from the source code."
@@ -61,7 +44,9 @@
     (def source
       (for [line (line-seq rdr)] (removeEmptyLineOrComment line)))
     (doseq [x (remove empty? source)]
-      (tokenReader (parser x)))))
+      (def parse (parser x))
+      (println parse)
+      (tokenReader parse))))
 
 (defn checkSource
   "Check if source file exists."

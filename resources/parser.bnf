@@ -18,5 +18,5 @@ sub 		::= <space> "-" <space>;
 mul 		::= <space> "*" <space>;
 div 		::= <space> "/" <space>;
 
-class		::= <"class"> <space_alo> <"\""> #'\w+' <"\"">;
+class		::= <"class"> <space_alo> <"\""> keyword <"\"">;
 variable	::= datatype <space_alo> keyword <space> <#'='> <space> expr;
