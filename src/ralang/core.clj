@@ -58,8 +58,8 @@
       (for [line (line-seq rdr)] (removeEmptyLineOrComment line)))
     (doseq [x (remove empty? source)]
       (def parse (parser x))
-      (comment (println parse))
-      (tokenReader parse))))
+      (tokenReader parse))
+    (gen/genEndFunction "return")))
 
 (defn checkSource
   "Check if source file exists."
@@ -74,4 +74,5 @@
   [& args]
   (cond
     (= (count args) 1) (checkSource (nth args 0))
-    :else (println "Wrong number of arguments.")))
+    :else (println "Wrong number of arguments."))
+  (debugMessage ["Finished compiling."]))

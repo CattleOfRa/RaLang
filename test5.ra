@@ -1,4 +1,4 @@
-module adder
+module helloworld
 
 function main:
     print "Hello World"
