@@ -11,10 +11,16 @@ Last updated: 24/04/2016
   <li>[X] Check if source file exists</li>
   <li>[X] Reading source file</li>
   <li>[X] Implement lexer and parser</li>
-  <li>[ ] Code generation
+  <li>[+] Code generation
     <ul>
-      <li>[X] Generate class(es)</li>
-      <li>[ ] Generate methods</li>
+      <li>[X] Generate class</li>
+      <li>[+] Generate functions</li>
+        <ul>
+          <li>[X] Generate main function</li>
+          <li>[ ] Generate .endmethod to end function</li>
+          <li>[ ] Generate basic function (takes args and returns values)</li>
+          <li>[ ] Determine stack limit and local variables limit</li>
+        </ul>
       <li>[ ] Print to the console</li>
       <li>[ ] Perform basic calculations</li>
       <li>[ ] Generate conditions/if branches</li>

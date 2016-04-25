@@ -1,10 +1,10 @@
-token		::= module | factor;
-keyword     ::= print
+token		::= keyword | factor;
+keyword     ::= module | mainfunc | function | print;
 
 (* Building blocks *)
 space		::= " ";
+indent      ::= #'\s{4}';
 eq          ::= "=";
-indent      ::= space{4};
 id      	::= #'\w+';
 variable	::= datatype <space+> id <space*> <eq> <space*> expr;
 
@@ -14,7 +14,7 @@ term		::= term mul factor | term div factor | <space*> factor <space*>;
 factor		::= num | '(' expr ')' | variable;
 
 (* Data types *)
-datatype	::= "int" | "float"
+datatype	::= "int" | "float" | "string" | "[" <space*> datatype <space*> "]";
 num 		::= int | float;
 <int>		::= #'-?\d+';
 <float>		::= #'-?\d+\.\d+';
@@ -32,8 +32,9 @@ modulename  ::= id;
 
 (* Functions *)
 mainfunc    ::= <"function main:">;
-function    ::= <"function"> <space+> funcname <space*> "(" <params> "):";
+function    ::= <"function"> <space+> funcname <space*> "(" params "):";
 funcname    ::= id;
+params      ::= datatype <space+> id;
 
 (* Keyword's definition *)
-print       ::= "print" <space+> string
+print       ::= <indent> <"print"> <space+> string;

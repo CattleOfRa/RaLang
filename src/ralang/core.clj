@@ -22,9 +22,14 @@
   (def tkey (first token))
   (def tval (second token))
   (case tkey
-    :token (tokenReader tval)
-    :module (gen/genClass tval)
-    (println "Not recognised.")))
+    :token       (tokenReader tval)
+    :keyword     (tokenReader tval)
+    :module      (gen/genModule
+                  (tokenReader tval))
+    :modulename  (second tval)
+    :mainfunc    (gen/genFunction "main" "[Ljava/lang/String;" "V")
+    :print       (gen/genPrint tval)
+    (println "Token is not recognised.")))
 
 (defn removeEmptyLineOrComment
   "Find and remove empty lines and comments from the source code."
@@ -51,10 +56,9 @@
   (with-open [rdr (reader file)]
     (def source
       (for [line (line-seq rdr)] (removeEmptyLineOrComment line)))
-    (comment (groupMethods source))
     (doseq [x (remove empty? source)]
       (def parse (parser x))
-      (println parse)
+      (comment (println parse))
       (tokenReader parse))))
 
 (defn checkSource
