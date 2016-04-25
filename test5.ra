@@ -1,0 +1,4 @@
+module adder
+
+function main:
+    print "Hello World"

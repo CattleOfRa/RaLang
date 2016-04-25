@@ -23,7 +23,7 @@
   (def tval (second token))
   (case tkey
     :token (tokenReader tval)
-    :class (gen/genClass tval)
+    :module (gen/genClass tval)
     (println "Not recognised.")))
 
 (defn removeEmptyLineOrComment
@@ -37,12 +37,21 @@
     (= (re-find matchEmptyLine) true) source
     :else sourceWithoutComment))
 
+(defn groupMethods
+  "Group method instrunctions. View 'doc/ralang-methods.png'"
+  [source]
+  (def reMethod #"define")
+  (def sourceAsStr (string/join "\n" source))
+  (doseq [x (re-seq reMethod sourceAsStr)]
+    (println x)))
+
 (defn readSource
   "Read source file and remove empty lines."
   [file]
   (with-open [rdr (reader file)]
     (def source
       (for [line (line-seq rdr)] (removeEmptyLineOrComment line)))
+    (comment (groupMethods source))
     (doseq [x (remove empty? source)]
       (def parse (parser x))
       (println parse)

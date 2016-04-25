@@ -1,8 +1,8 @@
-module HelloWorld
+module adder
 
 function main:
-    print "Hello World"
-
+    print sum(5, 15)
+    
 function sum(int a, int b, int):
     int c = a + b
     return c

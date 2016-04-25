@@ -1,22 +1,39 @@
-token		::= class | factor;
+token		::= module | factor;
+keyword     ::= print
 
-space		::= #'\s*';
-space_alo	::= #'\s+'; (* At Least One *)
+(* Building blocks *)
+space		::= " ";
+eq          ::= "=";
+indent      ::= space{4};
+id      	::= #'\w+';
+variable	::= datatype <space+> id <space*> <eq> <space*> expr;
 
-expr		::= expr add term | expr sub term | <space> term <space>;
-term		::= term mul factor | term div factor | <space> factor <space>;
+(* Maths expressions *)
+expr		::= expr add term | expr sub term | <space*> term <space*>;
+term		::= term mul factor | term div factor | <space*> factor <space*>;
 factor		::= num | '(' expr ')' | variable;
 
+(* Data types *)
 datatype	::= "int" | "float"
+num 		::= int | float;
 <int>		::= #'-?\d+';
 <float>		::= #'-?\d+\.\d+';
-num 		::= int | float;
-keyword		::= #'\w+';
+<string>    ::= #'".*"';
 
-add 		::= <space> "+" <space>;
-sub 		::= <space> "-" <space>;
-mul 		::= <space> "*" <space>;
-div 		::= <space> "/" <space>;
+(* Operators *)
+add 		::= <space*> "+" <space*>;
+sub 		::= <space*> "-" <space*>;
+mul 		::= <space*> "*" <space*>;
+div 		::= <space*> "/" <space*>;
 
-class		::= <"class"> <space_alo> <"\""> keyword <"\"">;
-variable	::= datatype <space_alo> keyword <space> <#'='> <space> expr;
+(* Modules *)
+module		::= <"module"> <space+> modulename;
+modulename  ::= id;
+
+(* Functions *)
+mainfunc    ::= <"function main:">;
+function    ::= <"function"> <space+> funcname <space*> "(" <params> "):";
+funcname    ::= id;
+
+(* Keyword's definition *)
+print       ::= "print" <space+> string
