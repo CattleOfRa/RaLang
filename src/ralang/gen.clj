@@ -1,9 +1,12 @@
 (ns ralang.gen
+  (:use [clojure.java.io])
   (:require [clojure.string :as string])
   (:gen-class))
 
 (def outputFile "output.ra")
 (def indent (string/join (repeat 4 " ")))
+
+(defn initOutput [] (.delete (clojure.java.io/file outputFile)))
 
 (defn write
   "Write bytecode to the output file."

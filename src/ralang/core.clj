@@ -72,6 +72,7 @@
 (defn -main
   "RaLang's main function."
   [& args]
+  (gen/initOutput)
   (cond
     (= (count args) 1) (checkSource (nth args 0))
     :else (println "Wrong number of arguments."))
