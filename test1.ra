@@ -1,7 +1,0 @@
-print "Hello World"
-
-define sum(int a, int b, int):
-       
-	return a + b
-	       	   
-print sum(2, 3)

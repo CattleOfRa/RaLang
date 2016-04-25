@@ -1,0 +1,4 @@
+module addtwo
+
+function main:
+    print 5 + 15

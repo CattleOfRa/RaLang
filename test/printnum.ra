@@ -1,0 +1,4 @@
+module printnum
+
+function main:
+    print 1993

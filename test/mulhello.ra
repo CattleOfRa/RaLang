@@ -1,0 +1,5 @@
+module mulhello
+
+function main:
+    print "Multi line hello world!"
+    print "Hi there."

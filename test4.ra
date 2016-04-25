@@ -1,8 +1,0 @@
-module adder
-
-function main:
-    print sum(5, 15)
-    
-function sum(int a, int b, int):
-    int c = a + b
-    return c
