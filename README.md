@@ -61,4 +61,4 @@ function main:
     print "Hello World!"
 ```
 
-We can compile this code to Jasmin using `lein.bat run hello.ra`, this will generate `output.ra`. Then we can compile Jasmin Bytecode to JVM Bytecode using `java -jar jasmin/jasmin.jar output.ra`. To run our first application in Ralang we can type `java hello`, this will output 'Hello World!' to the console.
+We can compile this code to Jasmin using `lein.bat run hello.ra`, this will generate `output.ra`. Then we can compile Jasmin Bytecode to JVM Bytecode using `java -jar ../jasmin/jasmin.jar output.ra` (in your case you might have to provide the full path to your Jasmin installation). To run our first application in Ralang we can type `java hello`, this will output 'Hello World!' to the console.
