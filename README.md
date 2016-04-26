@@ -21,12 +21,7 @@ Last updated: 25/04/2016
           <li>[ ] Generate basic function (takes args and returns values)</li>
           <li>[ ] Determine stack limit and local variables limit</li>
         </ul>
-      <li>[+] Generate print statement</li>
-        <ul>
-          <li>[X] A string</li>
-          <li>[ ] A number</li>
-          <li>[ ] A variable</li>
-        </ul>
+      <li>[X] Generate print statement</li>
       <li>[ ] Perform basic calculations</li>
         <ul>
           <li>[ ] Add, sub, mul, div 2 numbers</li>
@@ -39,6 +34,7 @@ Last updated: 25/04/2016
         </ul>
       <li>[ ] Generate conditions/if branches</li>
       <li>[ ] Support for variables</li>
+      <li>[ ] Convert number, expression or variable to string</li>
     </ul>
   </li>
   <li>[+] Testing compiler

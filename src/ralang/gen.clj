@@ -3,8 +3,11 @@
   (:require [clojure.string :as string])
   (:gen-class))
 
+(declare tokenReader)
 (def outputFile "output.ra")
 (def indent (string/join (repeat 4 " ")))
+(def j_string "Ljava/lang/String;")
+(def j_print "invokevirtual java/io/PrintStream/println")
 
 (defn initOutput [] (.delete (clojure.java.io/file outputFile)))
 
@@ -44,6 +47,37 @@
 (defn genPrint
   "Generates a print statement"
   [content]
-  (write   "    getstatic java/lang/System/out Ljava/io/PrintStream;")
-  (write   (str "    ldc " content))
-  (write   "    invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V"))
+  (write "    getstatic java/lang/System/out Ljava/io/PrintStream;")
+  (write (str "    ldc " content))
+  (write (indent j_print j_string ")V")))
+
+(defn genBipush
+  "Generates a bipush."
+  [number]
+  (println "bipush" number))
+
+(defn genIadd
+  "Generates a iadd"
+  [numbers]
+  (tokenReader (first numbers))
+  (tokenReader (second numbers))
+  (println "iadd"))
+
+(defn tokenReader
+  "Reads a token."
+  [token]
+  (def tkey (first token))
+  (def tval (second token))
+  (println token)
+  (case tkey
+    :token      (tokenReader tval)
+    :keyword    (tokenReader tval)
+    :module     (tokenReader tval)
+    :modulename (genModule (second tval))
+    :mainfunc   (genFunction "main" "[Ljava/lang/String;" "V")
+    :print      (tokenReader tval)
+    :toStr      (tokenReader tval)
+    :expr       (tokenReader tval)
+    :add        (genIadd (rest token))
+    :num        (genBipush tval)
+    token))

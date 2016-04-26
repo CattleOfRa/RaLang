@@ -1,5 +1,5 @@
-token		::= keyword | factor;
-keyword     ::= module | mainfunc | function | print;
+token		::= keyword  | module   | mainfunc | function;
+keyword     ::= print    | toStr    | toInt    | toFloat;
 
 (* Building blocks *)
 space		::= " ";
@@ -8,10 +8,15 @@ eq          ::= "=";
 id      	::= #'\w+';
 variable	::= datatype <space+> id <space*> <eq> <space*> expr;
 
-(* Maths expressions *)
-expr		::= expr add term | expr sub term | <space*> term <space*>;
-term		::= term mul factor | term div factor | <space*> factor <space*>;
-factor		::= num | '(' expr ')' | variable;
+(* Maths expressions - InstaParse example *)
+expr = add-sub
+<add-sub> = mul-div | add | sub
+add = add-sub <'+'> mul-div
+sub = add-sub <'-'> mul-div
+<mul-div> = term | mul | div
+mul = mul-div <'*'> term
+div = mul-div <'/'> term
+<term> = num | <'('> add-sub <')'>
 
 (* Data types *)
 datatype	::= "int" | "float" | "string" | "[" <space*> datatype <space*> "]";
@@ -19,12 +24,8 @@ num 		::= int | float;
 <int>		::= #'-?\d+';
 <float>		::= #'-?\d+\.\d+';
 <string>    ::= #'".*"';
-
-(* Operators *)
-add 		::= <space*> "+" <space*>;
-sub 		::= <space*> "-" <space*>;
-mul 		::= <space*> "*" <space*>;
-div 		::= <space*> "/" <space*>;
+<intString> ::= #'"-?\d+"';
+<fltString> ::= #'"-?\d+.\d+"';
 
 (* Modules *)
 module		::= <"module"> <space+> modulename;
@@ -37,4 +38,20 @@ funcname    ::= id;
 params      ::= datatype <space+> id;
 
 (* Keyword's definition *)
-print       ::= <indent> <"print"> <space+> string;
+print       ::= <indent> <"print"> <space+> (string | keyword);
+toStr       ::= <"str" space* "(" space*> expr <space* ")">;
+toInt       ::= <"int" space* "(" space*> intString <space* ")">;
+toFloat     ::= <"float" space* "(" space*> fltString <space* ")">;
+
+(* No longer in use *)
+
+(* Maths expressions - Idea taken from the Dragon Book
+expr		::= expr add term | expr sub term | term;
+term		::= term mul factor | term div factor | factor;
+factor		::= num | '(' expr ')' | variable; *)
+
+(* Operators 
+add 		::= <space* "+" space*>;
+sub 		::= <space* "-" space*>;
+mul 		::= <space* "*" space*>;
+div 		::= <space* "/" space*>; *)
