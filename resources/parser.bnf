@@ -1,5 +1,5 @@
 token		::= keyword  | module   | mainfunc | function;
-keyword     ::= print    | toStr    | toInt    | toFloat;
+keyword     ::= print;
 
 (* Building blocks *)
 space		::= " ";
@@ -21,9 +21,9 @@ div = mul-div <'/'> term
 (* Data types *)
 datatype	::= "int" | "float" | "string" | "[" <space*> datatype <space*> "]";
 num 		::= int | float;
-<int>		::= #'-?\d+';
-<float>		::= #'-?\d+\.\d+';
-string    ::= #'".*"';
+int		    ::= #'-?\d+';
+float		::= #'-?\d+\.\d+';
+string      ::= #'".*"';
 <intString> ::= #'"-?\d+"';
 <fltString> ::= #'"-?\d+.\d+"';
 
@@ -38,10 +38,7 @@ funcname    ::= id;
 params      ::= datatype <space+> id;
 
 (* Keyword's definition *)
-print       ::= <indent> <"print"> <space+> (string | keyword);
-toStr       ::= <"str" space* "(" space*> expr <space* ")">;
-toInt       ::= <"int" space* "(" space*> intString <space* ")">;
-toFloat     ::= <"float" space* "(" space*> fltString <space* ")">;
+print       ::= <indent> <"print"> <space+> (string | expr);
 
 (* No longer in use *)
 

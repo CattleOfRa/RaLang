@@ -21,8 +21,9 @@
   [type]
   (case (str type)
     ":string" (str j_string)
-    ":int"    ("I")
-    type))
+    ":int"    (str "I")
+    ":float"  (str "F")
+    (str type)))
 
 (defn genModule
   "Generates a module."
@@ -62,20 +63,17 @@
   "Generates a print statement"
   [content]
   (write "    getstatic java/lang/System/out Ljava/io/PrintStream;")
-  (def type (getType (tokenReader content)))
-  (write (str indent j_print "(" type ")V")))
-
-(defn genBipush
-  "Generates a bipush."
-  [number]
-  (write (str "    bipush " number)))
+  (def type (tokenReader content))
+  (println type)
+  (write (str indent j_print "(" (getType type) ")V")))
 
 (defn genIadd
   "Generates a iadd"
   [numbers]
   (tokenReader (first numbers))
-  (tokenReader (second numbers))
-  (write "    iadd"))
+  (def type (tokenReader (second numbers)))
+  (write "    iadd")
+  (str type))
 
 (defn tokenReader
   "Reads a token."
@@ -88,11 +86,12 @@
     :keyword    (tokenReader tval)
     :module     (tokenReader tval)
     :modulename (genModule (second tval))
-    :mainfunc   (genFunction "main" "[Ljava/lang/String;" "V")
+    :mainfunc   (genFunction "main" (str "[" j_string) "V")
     :print      (genPrint tval)
     :string     (genLdc token)
     :toStr      (tokenReader tval)
     :expr       (tokenReader tval)
     :add        (genIadd (rest token))
-    :num        (genBipush tval)
+    :num        (tokenReader tval)
+    :int        (genLdc token)
     token))
