@@ -1,5 +1,5 @@
 module printnum
 
 function main:
-    print "Hello World"
-    print 10+10
+    print "Simple addition."
+    print 150+50

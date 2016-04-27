@@ -5,15 +5,21 @@
     invokespecial java/lang/Object/<init>()V
     return
 .end method
-.method public static main([Ljava/lang/String;)V
+.method public static main()V
     .limit stack 50
     .limit locals 50
     getstatic java/lang/System/out Ljava/io/PrintStream;
-    ldc "Hello World"
+    ldc "Addition, subtraction, multiplication and division."
     invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
     getstatic java/lang/System/out Ljava/io/PrintStream;
     ldc 10
     ldc 10
+    ldc 6
+    ldc 2
+    isub
+    imul
+    ldc 2
+    idiv
     iadd
     invokevirtual java/io/PrintStream/println(I)V
     return

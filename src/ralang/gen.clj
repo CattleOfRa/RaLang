@@ -20,6 +20,13 @@
   "Returns JVM type."
   [type]
   (case (str type)
+    ":int" (str "i")
+    (str type)))
+
+(defn getMethodType
+  "Returns JVM type for methods."
+  [type]
+  (case (str type)
     ":string" (str j_string)
     ":int"    (str "I")
     ":float"  (str "F")
@@ -64,15 +71,24 @@
   [content]
   (write "    getstatic java/lang/System/out Ljava/io/PrintStream;")
   (def type (tokenReader content))
-  (println type)
-  (write (str indent j_print "(" (getType type) ")V")))
+  (write (str indent j_print "(" (getMethodType type) ")V")))
 
-(defn genIadd
-  "Generates a iadd"
+(defn genAdd
+  "Generates an add statement for a particular type."
   [numbers]
   (tokenReader (first numbers))
   (def type (tokenReader (second numbers)))
-  (write "    iadd")
+  (def dType (getType type))
+  (write (str indent dType "add"))
+  (str type))
+
+(defn genArithmetic
+  "Generates an arithmetic expression for a particular type."
+  [arith, numbers]
+  (tokenReader (first numbers))
+  (def type (tokenReader (second numbers)))
+  (def dType (getType type))
+  (write (str indent dType arith))
   (str type))
 
 (defn tokenReader
@@ -91,7 +107,12 @@
     :string     (genLdc token)
     :toStr      (tokenReader tval)
     :expr       (tokenReader tval)
-    :add        (genIadd (rest token))
+    :add        (genArithmetic "add" (rest token))
+    :sub        (genArithmetic "sub" (rest token))
+    :mul        (genArithmetic "mul" (rest token))
+    :div        (genArithmetic "div" (rest token))
     :num        (tokenReader tval)
     :int        (genLdc token)
+    :float      (genLdc token)
+    :double     (genLdc token)
     token))

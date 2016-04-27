@@ -19,7 +19,7 @@ div = mul-div <'/'> term
 <term> = num | <'('> add-sub <')'>
 
 (* Data types *)
-datatype	::= "int" | "float" | "string" | "[" <space*> datatype <space*> "]";
+datatype	::= "int" | "float" | "double" | "string" | "[" <space*> datatype <space*> "]";
 num 		::= int | float;
 int		    ::= #'-?\d+';
 float		::= #'-?\d+\.\d+';

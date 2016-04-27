@@ -4,5 +4,5 @@ function main:
     print message("Hello World") # Call 'message' and print output
 
 # A function that takes a string and returns a string
-function message(string text, string):
+function message(string text) -> string:
     return text
