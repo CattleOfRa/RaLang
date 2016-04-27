@@ -71,14 +71,13 @@ Last updated: 27/04/2016
 
 #####multimaths.ra
 ```python
-module printnum
+module multimaths
 
 function main:
     print "Addition, subtraction, multiplication and division."
     print 10+10*(6-2)/2
+    # 30
 ```
-
-This would output 30 which is the correct output.
 
 #####callhello.ra
 ```python

@@ -1,4 +1,4 @@
-module printnum
+module mulimaths
 
 function main:
     print "Addition, subtraction, multiplication and division."
