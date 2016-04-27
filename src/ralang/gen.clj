@@ -16,6 +16,14 @@
   [bytecode]
   (spit outputFile (str bytecode "\n") :append true))
 
+(defn getType
+  "Returns JVM type."
+  [type]
+  (case (str type)
+    ":string" (str j_string)
+    ":int"    ("I")
+    type))
+
 (defn genModule
   "Generates a module."
   [id]
@@ -44,24 +52,30 @@
   (write   (str indent rt))
   (write   ".end method"))
 
+(defn genLdc
+  "Generates a LDC. Returns type (string, int)."
+  [content]
+  (write (str "    ldc " (second content)))
+  (first content))
+
 (defn genPrint
   "Generates a print statement"
   [content]
   (write "    getstatic java/lang/System/out Ljava/io/PrintStream;")
-  (write (str "    ldc " content))
-  (write (indent j_print j_string ")V")))
+  (def type (getType (tokenReader content)))
+  (write (str indent j_print "(" type ")V")))
 
 (defn genBipush
   "Generates a bipush."
   [number]
-  (println "bipush" number))
+  (write (str "    bipush " number)))
 
 (defn genIadd
   "Generates a iadd"
   [numbers]
   (tokenReader (first numbers))
   (tokenReader (second numbers))
-  (println "iadd"))
+  (write "    iadd"))
 
 (defn tokenReader
   "Reads a token."
@@ -75,7 +89,8 @@
     :module     (tokenReader tval)
     :modulename (genModule (second tval))
     :mainfunc   (genFunction "main" "[Ljava/lang/String;" "V")
-    :print      (tokenReader tval)
+    :print      (genPrint tval)
+    :string     (genLdc token)
     :toStr      (tokenReader tval)
     :expr       (tokenReader tval)
     :add        (genIadd (rest token))

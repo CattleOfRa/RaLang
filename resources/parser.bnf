@@ -23,7 +23,7 @@ datatype	::= "int" | "float" | "string" | "[" <space*> datatype <space*> "]";
 num 		::= int | float;
 <int>		::= #'-?\d+';
 <float>		::= #'-?\d+\.\d+';
-<string>    ::= #'".*"';
+string    ::= #'".*"';
 <intString> ::= #'"-?\d+"';
 <fltString> ::= #'"-?\d+.\d+"';
 
