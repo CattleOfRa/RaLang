@@ -32,9 +32,19 @@
     ":float"  (str "F")
     (str type)))
 
+(defn convertDatatype
+  "Converts datatype from ralang to JVM."
+  [type]
+  (case (str type)
+    "String" (str j_string)
+    "Int" (str "I")
+    "Void" (str "V")
+    (str type)))
+
 (defn genModule
   "Generates a module."
   [id]
+  (println "genModule:" id)
   (write   (str ".class public " id))
   (write   ".super java/lang/Object")
   (write   ".method public <init>()V")
@@ -49,7 +59,7 @@
     ar    - Function's arguments.
     rt    - Function's return type."
   [name, ar, rt]
-  (write   (str ".method public static " (str name "(" ar ")" rt)))
+  (write   (str ".method public static " name "(" ar ")" rt))
   (write   "    .limit stack 50")
   (write   "    .limit locals 50"))
 
@@ -96,13 +106,21 @@
   [token]
   (def tkey (first token))
   (def tval (second token))
-  (println token)
+  (println "--------------------------------")
+  (println "tkey:" tkey)
+  (println "tval:" tval)
   (case tkey
     :token      (tokenReader tval)
     :keyword    (tokenReader tval)
-    :module     (tokenReader tval)
-    :modulename (genModule (second tval))
-    :mainfunc   (genFunction "main" (str "[" j_string) "V")
+    :id         (str tval)
+    :module     (genModule (tokenReader tval))
+    :modulename (tokenReader tval)
+    :function   (genFunction
+                 (tokenReader tval)
+                 (tokenReader (nth token 2))
+                 (tokenReader (nth token 3)))
+    :funcname   (tokenReader tval)
+    :datatype   (convertDatatype (str tval))
     :print      (genPrint tval)
     :string     (genLdc token)
     :toStr      (tokenReader tval)

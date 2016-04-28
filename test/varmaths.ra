@@ -1,0 +1,4 @@
+module varmaths
+
+function main([String] args) -> Void:
+    print 10*(10-4)/2+5

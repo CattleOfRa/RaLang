@@ -1,4 +1,4 @@
-token		::= keyword  | module   | mainfunc | function;
+token		::= keyword  | module   | function;
 keyword     ::= print;
 
 (* Building blocks *)
@@ -6,7 +6,9 @@ space		::= " ";
 indent      ::= #'\s{4}';
 eq          ::= "=";
 id      	::= #'\w+';
-variable	::= datatype <space+> id <space*> <eq> <space*> expr;
+
+variable	::= varID <space*> <eq> <space*> expr;
+varID       ::= datatype <space+> id;
 
 (* Maths expressions - InstaParse example *)
 expr = add-sub
@@ -19,11 +21,13 @@ div = mul-div <'/'> term
 <term> = num | <'('> add-sub <')'>
 
 (* Data types *)
-datatype	::= "int" | "float" | "double" | "string" | "[" <space*> datatype <space*> "]";
+datatype	::= "Int" | "Float" | "Double" | "String" | "Void" | array;
 num 		::= int | float;
 int		    ::= #'-?\d+';
 float		::= #'-?\d+\.\d+';
 string      ::= #'".*"';
+array       ::= "[" <space*> datatype <space*> "]";
+tuple       ::= "(" <space*> varID <space*> ")";
 <intString> ::= #'"-?\d+"';
 <fltString> ::= #'"-?\d+.\d+"';
 
@@ -32,10 +36,10 @@ module		::= <"module"> <space+> modulename;
 modulename  ::= id;
 
 (* Functions *)
-mainfunc    ::= <"function main:">;
-function    ::= <"function"> <space+> funcname <space*> "(" params "):";
+function    ::= <"function" space+> funcname <space*> params <space* "->" space*> datatype <space* ":">;
 funcname    ::= id;
-params      ::= datatype <space+> id;
+params      ::= tuple;
+return      ::= datatype;
 
 (* Keyword's definition *)
 print       ::= <indent> <"print"> <space+> (string | expr);

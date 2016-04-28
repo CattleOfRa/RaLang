@@ -1,0 +1,4 @@
+module complex
+
+function main:
+    print 10*(10-4)/2+5
