@@ -1,11 +1,12 @@
 token		::= keyword  | module   | function;
-keyword     ::= print;
+keyword     ::= print    | return;
 
 (* Building blocks *)
 space		::= " ";
 indent      ::= #'\s{4}';
 eq          ::= "=";
 id      	::= #'\w+';
+varName     ::= #'\w+';
 
 variable	::= varID <space*> <eq> <space*> expr;
 varID       ::= datatype <space+> id;
@@ -18,7 +19,7 @@ sub = add-sub <'-'> mul-div;
 <mul-div> = term | mul | div;
 mul = mul-div <'*'> term;
 div = mul-div <'/'> term;
-<term> = num | <'('> add-sub <')'>;
+<term> = varName | num | <'('> add-sub <')'>;
 
 (* Data types *)
 datatype	::= "Int" | "Float" | "Double" | "String" | "Void" | array;
@@ -27,7 +28,7 @@ int		    ::= #'-?\d+';
 float		::= #'-?\d+\.\d+';
 string      ::= #'".*"';
 array       ::= <"[" space*> datatype <space* "]">;
-tuple       ::= <"(" space*> varID <space* ")">;
+tuple       ::= <"("> (<space*> varID <space* #',?'>)* <")">;
 <intString> ::= #'"-?\d+"';
 <fltString> ::= #'"-?\d+.\d+"';
 
@@ -41,7 +42,8 @@ funcname    ::= id;
 return      ::= datatype;
 
 (* Keyword's definition *)
-print       ::= <indent> <"print"> <space+> (string | expr);
+print       ::= <indent "print" space+> (string | expr);
+return      ::= <indent "return" space+> expr;
 
 (* No longer in use *)
 

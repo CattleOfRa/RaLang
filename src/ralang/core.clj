@@ -21,7 +21,7 @@
   [source]
   (def reComment #"\s*#.*")
   (def sourceWithoutComment (clojure.string/replace source reComment ""))
-  (def reEmptyLine #"^\s*$")
+  (def reEmptyLine #"^[\s*|\t*]*$")
   (def matchEmptyLine (re-matcher reEmptyLine sourceWithoutComment))
   (cond
     (= (re-find matchEmptyLine) true) source
@@ -32,11 +32,12 @@
   [file]
   (with-open [rdr (reader file)]
     (def source
-      (for [line (line-seq rdr)] (removeEmptyLineOrComment line)))
+      (for [line (line-seq rdr)]
+        (removeEmptyLineOrComment line)))
     (doseq [x (remove empty? source)]
       (def parse (parser x))
-      (gen/tokenReader parse))
-    (gen/genEndFunction "return")))
+      (println parse)
+      (gen/tokenReader parse))))
 
 (defn checkSource
   "Check if source file exists."

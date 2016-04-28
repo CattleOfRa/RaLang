@@ -4,17 +4,20 @@
   (:gen-class))
 
 (declare tokenReader)
+(declare genReturn)
 (def outputFile "output.ra")
 (def indent (string/join (repeat 4 " ")))
 (def j_string "Ljava/lang/String;")
 (def j_print "invokevirtual java/io/PrintStream/println")
+(def lastWritten "")
 
 (defn initOutput [] (.delete (clojure.java.io/file outputFile)))
 
 (defn write
   "Write bytecode to the output file."
   [bytecode]
-  (spit outputFile (str bytecode "\n") :append true))
+  (spit outputFile (str bytecode "\n") :append true)
+  (def lastWritten bytecode))
 
 (defn getType
   "Returns JVM type."
@@ -56,9 +59,7 @@
   (write   ".super java/lang/Object")
   (write   ".method public <init>()V")
   (write   "    aload_0")
-  (write   "    invokespecial java/lang/Object/<init>()V")
-  (write   "    return")
-  (write   ".end method"))
+  (write   "    invokespecial java/lang/Object/<init>()V"))
 
 (defn genFunction
   "Generates a new function.
@@ -66,15 +67,20 @@
     ar    - Function's arguments.
     rt    - Function's return type."
   [name, ar, rt]
+  (cond
+    (not (= lastWritten ".end method")) (genReturn nil)
+    :else (println "Ended correctly."))
   (write   (str ".method public static " name ar rt))
   (write   "    .limit stack 50")
   (write   "    .limit locals 50"))
 
-(defn genEndFunction
+(defn genReturn
   "Generates the ending of the function.
     rt    - Function's return type."
   [rt]
-  (write   (str indent rt))
+  (println "RT HAS:" rt)
+  (def returnType (getType rt))
+  (write   (str indent returnType "return"))
   (write   ".end method"))
 
 (defn genLdc
@@ -90,15 +96,6 @@
   (def type (tokenReader content))
   (write (str indent j_print "(" (getMethodType type) ")V")))
 
-(defn genAdd
-  "Generates an add statement for a particular type."
-  [numbers]
-  (tokenReader (first numbers))
-  (def type (tokenReader (second numbers)))
-  (def dType (getType type))
-  (write (str indent dType "add"))
-  (str type))
-
 (defn genArithmetic
   "Generates an arithmetic expression for a particular type."
   [arith, numbers]
@@ -113,9 +110,7 @@
   [token]
   (def tkey (first token))
   (def tval (second token))
-  (println "----------")
-  (println "tkey:" tkey)
-  (println "tval:" tval)
+  (def trst (rest token))
   (case tkey
     :token      (tokenReader tval)
     :keyword    (tokenReader tval)
@@ -129,16 +124,17 @@
     :funcname   (tokenReader tval)
     :datatype   (convertDatatype tval)
     :print      (genPrint tval)
+    :return     (genReturn (tokenReader tval))
     :string     (genLdc token)
     :toStr      (tokenReader tval)
     :expr       (tokenReader tval)
-    :add        (genArithmetic "add" (rest token))
-    :sub        (genArithmetic "sub" (rest token))
-    :mul        (genArithmetic "mul" (rest token))
-    :div        (genArithmetic "div" (rest token))
+    :add        (genArithmetic "add" trst)
+    :sub        (genArithmetic "sub" trst)
+    :mul        (genArithmetic "mul" trst)
+    :div        (genArithmetic "div" trst)
     :num        (tokenReader tval)
     :int        (genLdc token)
     :float      (genLdc token)
     :double     (genLdc token)
-    :tuple      (readTuple (rest token))
+    :tuple      (readTuple trst)
     token))
