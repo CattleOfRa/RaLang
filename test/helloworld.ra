@@ -1,4 +1,4 @@
 module helloworld
 
-function main:
+function main([String] args) -> Void:
     print "Hello World"

@@ -1,8 +1,8 @@
 module callhello
 
-function main:
+function main([String] args) -> Void:
     print message("Hello World") # Call 'message' and print output
 
 # A function that takes a string and returns a string
-function message(string text) -> string:
+function message(String text) -> String:
     return text

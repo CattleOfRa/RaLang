@@ -36,8 +36,8 @@
         (removeEmptyLineOrComment line)))
     (doseq [x (remove empty? source)]
       (def parse (parser x))
-      (println parse)
-      (gen/tokenReader parse))))
+      (gen/tokenReader parse)))
+  (gen/genFunctionCalls))
 
 (defn checkSource
   "Check if source file exists."
@@ -50,7 +50,6 @@
 (defn -main
   "RaLang's main function."
   [& args]
-  (gen/initOutput)
   (cond
     (= (count args) 1) (checkSource (nth args 0))
     :else (println "Wrong number of arguments."))

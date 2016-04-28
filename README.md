@@ -5,7 +5,7 @@ Start Date:	 	18/03/2016<br />
 Description:	A compiler for RaLang written in clojure to compile source code into JVM bytecode.<br />
 
 # To-do
-Last updated: 27/04/2016
+Last updated: 29/04/2016
 
 <ul>
   <li>[X] Check if source file exists</li>
@@ -14,12 +14,13 @@ Last updated: 27/04/2016
   <li>[+] Code generation
     <ul>
       <li>[X] Generate class</li>
-      <li>[+] Generate functions</li>
+      <li>[X] Generate functions</li>
         <ul>
           <li>[X] Generate main function</li>
           <li>[X] Generate .endmethod to end function</li>
           <li>[X] Generate basic function (takes args and returns values)</li>
-          <li>[+] Enable calling functions</li>
+          <li>[X] Enable calling functions</li>
+          <li>[ ] Calling functions with arguments</li>
         </ul>
       <li>[ ] Determine stack limit and local variables limit</li>
       <li>[X] Generate print statement</li>
@@ -50,13 +51,13 @@ Last updated: 27/04/2016
 </ul>
 
 # Example
-Last updated: 25/04/2016
+Last updated: 29/04/2016
 
 #####mulhello.ra
 ```python
 module mulhello
 
-function main:
+function main([String] args) -> Void:
     print "Multi line hello world!"
     print "Hi there."
 ```
@@ -69,23 +70,34 @@ Hi there.
 ```
 
 # More sample code
-Last updated: 27/04/2016
+Last updated: 29/04/2016
 
 #####multimaths.ra
 ```python
 module multimaths
 
-function main:
+function main([String] args) -> Void:
     print "Addition, subtraction, multiplication and division."
     print 10+10*(6-2)/2
     # 30
 ```
 
-#####callhello.ra
+#####funccall.ra
+```python
+module funccall
+
+function main([String] args) -> Void:
+    print sum()
+
+function sum() -> Int:
+    return 5+5
+```
+
+#####callhello.ra (to be implemented)
 ```python
 module callhello
 
-function main:
+function main([String] args) -> Void:
     print message("Hello World") # Call 'message' and print output
 
 # A function that takes a string and returns a string

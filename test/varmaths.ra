@@ -1,7 +1,0 @@
-module varmaths
-
-function main([String] args) -> Void:
-    print 10+2
-
-function sum(Int a, Int b) -> Int:
-    return 5

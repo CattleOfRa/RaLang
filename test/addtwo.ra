@@ -1,4 +1,0 @@
-module addtwo
-
-function main:
-    print 2016-1993

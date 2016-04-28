@@ -1,0 +1,20 @@
+.class public funccall
+.super java/lang/Object
+.method public <init>()V
+    aload_0
+    invokespecial java/lang/Object/<init>()V
+    return
+.end method
+.method public static main([Ljava/lang/String;)V
+    .limit stack 50
+    .limit locals 50
+    return
+.end method
+.method public static sum()I
+    .limit stack 50
+    .limit locals 50
+    ldc 5
+    ldc 5
+    iadd
+    ireturn
+.end method

@@ -39,10 +39,11 @@ modulename  ::= id;
 (* Functions *)
 function    ::= <"function" space+> funcname <space*> tuple <space* "->" space*> datatype <space* ":">;
 funcname    ::= id;
+funccall    ::= id <space*> tuple;
 return      ::= datatype;
 
 (* Keyword's definition *)
-print       ::= <indent "print" space+> (string | expr);
+print       ::= <indent "print" space+> (string | expr | funccall);
 return      ::= <indent "return" space+> expr;
 
 (* No longer in use *)
