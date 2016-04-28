@@ -35,24 +35,19 @@
 (defn convertDatatype
   "Converts datatype from ralang to JVM."
   [type]
-  (def a
-    (cond
-      (= (first type) :array) (str "[" (tokenReader (second type)))
-      :else (case type
-              "String" (str j_string)
-              "Int"    (str "I")
-              "Void"   (str "V")
-              (str type))))
-  (println "convertDatatype a:" a)
-  a)
+  (cond
+    (= (first type) :array) (str "[" (tokenReader (second type)))
+    :else (case type
+            "String" (str j_string)
+            "Int"    (str "I")
+            "Void"   (str "V")
+            (str type))))
 
 (defn readTuple
   "Function argument's tuple reader."
   [tuple]
-  (println "readTuple:" tuple)
-  (def b (str "(" (str (doseq [t tuple] (tokenReader (nth t 1)))) ")"))
-  (def c (apply str (map #(tokenReader (nth % 1)) tuple)))
-  (str "(" c ")"))
+  (def args (apply str (map #(tokenReader (nth % 1)) tuple)))
+  (str "(" args ")"))
 
 (defn genModule
   "Generates a module."
@@ -118,7 +113,7 @@
   [token]
   (def tkey (first token))
   (def tval (second token))
-  (println "--------------------------------")
+  (println "----------")
   (println "tkey:" tkey)
   (println "tval:" tval)
   (case tkey

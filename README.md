@@ -14,11 +14,11 @@ Last updated: 27/04/2016
   <li>[+] Code generation
     <ul>
       <li>[X] Generate class</li>
-      <li>[+] Generate functions</li>
+      <li>[X] Generate functions</li>
         <ul>
           <li>[X] Generate main function</li>
           <li>[X] Generate .endmethod to end function</li>
-          <li>[ ] Generate basic function (takes args and returns values)</li>
+          <li>[X] Generate basic function (takes args and returns values)</li>
         </ul>
       <li>[ ] Determine stack limit and local variables limit</li>
       <li>[X] Generate print statement</li>
