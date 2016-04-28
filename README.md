@@ -32,6 +32,7 @@ Last updated: 27/04/2016
               <li>[+] 2 variables</li>
             </ul>
         </ul>
+      <li>[ ] Store and load arguments from functions</li>
       <li>[ ] Support for variables</li>
       <li>[ ] Generate conditions/if branches</li>
     </ul>
