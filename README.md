@@ -19,8 +19,8 @@ Last updated: 27/04/2016
           <li>[X] Generate main function</li>
           <li>[X] Generate .endmethod to end function</li>
           <li>[ ] Generate basic function (takes args and returns values)</li>
-          <li>[ ] Determine stack limit and local variables limit</li>
         </ul>
+      <li>[ ] Determine stack limit and local variables limit</li>
       <li>[X] Generate print statement</li>
       <li>[+] Perform basic calculations</li>
         <ul>

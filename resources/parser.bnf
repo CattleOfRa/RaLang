@@ -11,14 +11,14 @@ variable	::= varID <space*> <eq> <space*> expr;
 varID       ::= datatype <space+> id;
 
 (* Maths expressions - InstaParse example *)
-expr = add-sub
-<add-sub> = mul-div | add | sub
-add = add-sub <'+'> mul-div
-sub = add-sub <'-'> mul-div
-<mul-div> = term | mul | div
-mul = mul-div <'*'> term
-div = mul-div <'/'> term
-<term> = num | <'('> add-sub <')'>
+expr = add-sub;
+<add-sub> = mul-div | add | sub;
+add = add-sub <'+'> mul-div;
+sub = add-sub <'-'> mul-div;
+<mul-div> = term | mul | div;
+mul = mul-div <'*'> term;
+div = mul-div <'/'> term;
+<term> = num | <'('> add-sub <')'>;
 
 (* Data types *)
 datatype	::= "Int" | "Float" | "Double" | "String" | "Void" | array;
@@ -26,8 +26,8 @@ num 		::= int | float;
 int		    ::= #'-?\d+';
 float		::= #'-?\d+\.\d+';
 string      ::= #'".*"';
-array       ::= "[" <space*> datatype <space*> "]";
-tuple       ::= "(" <space*> varID <space*> ")";
+array       ::= <"[" space*> datatype <space* "]">;
+tuple       ::= <"(" space*> varID <space* ")">;
 <intString> ::= #'"-?\d+"';
 <fltString> ::= #'"-?\d+.\d+"';
 
@@ -36,9 +36,8 @@ module		::= <"module"> <space+> modulename;
 modulename  ::= id;
 
 (* Functions *)
-function    ::= <"function" space+> funcname <space*> params <space* "->" space*> datatype <space* ":">;
+function    ::= <"function" space+> funcname <space*> tuple <space* "->" space*> datatype <space* ":">;
 funcname    ::= id;
-params      ::= tuple;
 return      ::= datatype;
 
 (* Keyword's definition *)

@@ -5,7 +5,7 @@
     invokespecial java/lang/Object/<init>()V
     return
 .end method
-.method public static main([:params [:tuple "(" [:varID [:datatype [:array "[" [:datatype "String"] "]"]] [:id "args"]] ")"]])V
+.method public static main([Ljava/lang/String;)V
     .limit stack 50
     .limit locals 50
     getstatic java/lang/System/out Ljava/io/PrintStream;
