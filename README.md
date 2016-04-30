@@ -20,18 +20,18 @@ Last updated: 30/04/2016
           <li>[X] Generate .endmethod to end function</li>
           <li>[X] Generate basic function (takes args and returns values)</li>
           <li>[X] Enable calling functions</li>
-          <li>[ ] Calling functions with arguments</li>
+          <li>[X] Calling functions with arguments</li>
         </ul>
       <li>[ ] Determine stack limit and local variables limit</li>
       <li>[X] Generate print statement</li>
-      <li>[+] Perform basic calculations</li>
+      <li>[X] Perform basic calculations</li>
         <ul>
-          <li>[+] Add, sub, mul, div</li>
+          <li>[X] Add, sub, mul, div</li>
             <ul>
               <li>[X] 2 numbers</li>
               <li>[X] 3 numbers</li>
-              <li>[+] 1 number and a variable</li>
-              <li>[+] 2 variables</li>
+              <li>[X] 1 number and a variable</li>
+              <li>[X] 2 variables</li>
             </ul>
         </ul>
       <li>[X] Store and load arguments from functions</li>
@@ -44,14 +44,14 @@ Last updated: 30/04/2016
       <li>[X] Program prints "Hello World" to the screen</li>
       <li>[X] Print multiple lines to the screen</li>
       <li>[X] Program adds two numbers and prints result</li>
-      <li>[ ] Print the output of a function which takes a string as an input and returns another string</li>
+      <li>[X] Print the output of a function which takes a string as an input and returns another string</li>
       <li>[ ] Compile simple factorial function</li>
     </ul>
   </li>
 </ul>
 
 # Example
-Last updated: 29/04/2016
+Last updated: 30/04/2016
 
 #####mulhello.ra
 ```python
@@ -93,7 +93,7 @@ function sum() -> Int:
     return 5+5
 ```
 
-#####callhello.ra (to be implemented)
+#####callhello.ra
 ```python
 module callhello
 
@@ -103,4 +103,17 @@ function main([String] args) -> Void:
 # A function that takes a string and returns a string
 function message(String text) -> String:
     return text
+```
+
+#####mulvars.ra
+```python
+module mulvars
+
+function main([String] args) -> Void:
+    Int a = 30
+    print sum(a, 30)
+
+function sum(Int a, Int b) -> Int:
+    Int c = a+b*2
+    return c
 ```

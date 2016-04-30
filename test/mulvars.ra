@@ -1,0 +1,9 @@
+module mulvars
+
+function main([String] args) -> Void:
+    Int a = 30
+    print sum(a, 30)
+
+function sum(Int a, Int b) -> Int:
+    Int c = a+b*2
+    return c

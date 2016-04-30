@@ -36,7 +36,6 @@
         (removeEmptyLineOrComment line)))
     (doseq [x (remove empty? source)]
       (def parse (parser x))
-      (println parse)
       (gen/tokenReader parse)))
   (gen/genOutput2))
 
