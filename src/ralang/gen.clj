@@ -5,7 +5,6 @@
 
 (declare tokenReader)
 (declare genReturn)
-(def jasminFile "")
 (def output1 "output-1.ra")
 (def output2 "output-2.ra")
 (def indent (string/join (repeat 4 " ")))
@@ -97,8 +96,10 @@
   (write output1 (str "->fc" fName))
   fName)
 
-(defn genFunctionCalls
-  "Generates all function calls." []
+(defn genOutput2
+  "Generates:
+    Function calls.
+    Missing print statements." []
   (with-open [rdr (reader output1)]
     (doseq [line (line-seq rdr)]
       (def oPart (split-at 4 line))

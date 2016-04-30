@@ -8,13 +8,22 @@
 .method public static main([Ljava/lang/String;)V
     .limit stack 50
     .limit locals 50
+    getstatic java/lang/System/out Ljava/io/PrintStream;
+->fcsum
+->prsum
     return
 .end method
 .method public static sum()I
     .limit stack 50
     .limit locals 50
     ldc 5
-    ldc 5
+    ldc 10
+    ldc 2
+    isub
+    ldc 4
+    idiv
+    ldc 10
+    imul
     iadd
     ireturn
 .end method

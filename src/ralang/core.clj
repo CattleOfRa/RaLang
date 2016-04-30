@@ -37,7 +37,7 @@
     (doseq [x (remove empty? source)]
       (def parse (parser x))
       (gen/tokenReader parse)))
-  (gen/genFunctionCalls))
+  (gen/genOutput2))
 
 (defn checkSource
   "Check if source file exists."
