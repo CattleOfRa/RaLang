@@ -5,7 +5,7 @@ Start Date:	 	18/03/2016<br />
 Description:	A compiler for RaLang written in clojure to compile source code into JVM bytecode.<br />
 
 # To-do
-Last updated: 29/04/2016
+Last updated: 30/04/2016
 
 <ul>
   <li>[X] Check if source file exists</li>
@@ -34,8 +34,8 @@ Last updated: 29/04/2016
               <li>[+] 2 variables</li>
             </ul>
         </ul>
-      <li>[ ] Store and load arguments from functions</li>
-      <li>[ ] Support for variables</li>
+      <li>[X] Store and load arguments from functions</li>
+      <li>[X] Support for variables</li>
       <li>[ ] Generate conditions/if branches</li>
     </ul>
   </li>
