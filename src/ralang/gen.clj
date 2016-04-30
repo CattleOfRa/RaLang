@@ -51,9 +51,35 @@
             "Void"   (str "V")
             (str type))))
 
+(defn storeArgs
+  "Read function arguments and store them."
+  [args]
+  (println "Arguments obtained:" args)
+  (def localCount 0)
+  (def localVariables {})
+  (doseq [x args]
+    (def aType (tokenReader (nth x 1)))
+    (def aName (tokenReader (nth x 2)))
+    (def localVariables (merge localVariables {aName (str (string/lower-case aType) "load_" localCount)}))
+    (def localCount (inc localCount)))
+  (println "Current local variables are:" localVariables))
+
+(defn storeVariables
+  "Read and store variable."
+  [variables]
+  (println "Variables obtained:" variables)
+  (doseq [x variables]
+    (def aType (tokenReader (nth x 1)))
+    (def aName (tokenReader (nth x 2)))
+    (def localVariables (merge localVariables {aName (str (string/lower-case aType) "load_" localCount)}))
+    (write output1 (str indent (string/lower-case aType) "store_" localCount))
+    (def localCount (inc localCount)))
+  (println "Current local variables are:" localVariables))
+
 (defn readTuple
   "Function argument's tuple reader."
   [tuple]
+  (storeArgs tuple)
   (def args (apply str (map #(tokenReader (nth % 1)) tuple)))
   (str "(" args ")"))
 
@@ -75,12 +101,16 @@
     rt    - Function's return type."
   [name, ar, rt]
   (cond
-    (not (= lastWritten ".end method")) (genReturn output1 nil)
-    :else (println "Ended correctly."))
+    (not (= lastWritten ".end method")) (genReturn output1 nil))
   (write output1 (str ".method public static " name ar rt))
   (write output1 "    .limit stack 50")
   (write output1 "    .limit locals 50")
   (def functionsTable (merge functionsTable {name (str ar rt)})))
+
+(defn storeFunctionName
+  "Stores the current function name to enable us to create local variables."
+  [name]
+  (def functionName name))
 
 (defn genReturn
   "Generates the ending of the function.
@@ -119,6 +149,7 @@
 (defn genLdc
   "Generates a LDC. Returns type (string, int)."
   [content]
+  (println "LDC (first):" (first content))
   (write output1 (str "    ldc " (second content)))
   (first content))
 
@@ -134,11 +165,34 @@
 (defn genArithmetic
   "Generates an arithmetic expression for a particular type."
   [arith, numbers]
+  (println "Arithmetic:" arith)
+  (println "Arithmetic numbers:" (first numbers))
   (tokenReader (first numbers))
   (def type (tokenReader (second numbers)))
+  (println "The arithmentic type is:" type)
   (def dType (getType type))
   (write output1 (str indent dType arith))
   (str type))
+
+(defn genVariable
+  "Reads and stores a variable."
+  [variable]
+  (def name (conj () (first variable)))
+  (def value (second variable))
+  (println "Variable (name):" name)
+  (println "Variable (value):" value)
+  ; Value is the expression of the variable which gets calculated before assignment.
+  (tokenReader value)
+  (println "Generating value completed...")
+  (storeVariables name)
+  (println "Generating name completed..."))
+
+(defn genLocalVar
+  "Gets a local variable by name."
+  [variable]
+  (def expression (map localVariables [variable]))
+  (write output1 (str indent (first expression)))
+  (first (first expression)))
 
 (defn tokenReader
   "Reads a token."
@@ -146,6 +200,10 @@
   (def tkey (first token))
   (def tval (second token))
   (def trst (rest token))
+  
+  (cond
+    (= tkey :funcname) (storeFunctionName (tokenReader tval)))
+  
   (case tkey
     :token      (tokenReader tval)
     :keyword    (tokenReader tval)
@@ -158,6 +216,9 @@
                  (tokenReader (nth token 3)))
     :funcname   (tokenReader tval)
     :funccall   (genFunctionCallPlaceHolder tval)
+    :variable   (genVariable trst)
+    :varName    (genLocalVar tval)
+    :varID      (storeVariables trst)
     :datatype   (convertDatatype tval)
     :print      (genPrintOrPlaceHolder tval)
     :return     (genReturn output1 (tokenReader tval))

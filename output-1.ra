@@ -1,4 +1,4 @@
-.class public mulfuncs
+.class public vars
 .super java/lang/Object
 .method public <init>()V
     aload_0
@@ -9,22 +9,17 @@
     .limit stack 50
     .limit locals 50
     getstatic java/lang/System/out Ljava/io/PrintStream;
-->fchello
-->prhello
-    getstatic java/lang/System/out Ljava/io/PrintStream;
-->fcsomeNumber
-->prsomeNumber
+->fcsum
+->prsum
     return
 .end method
-.method public static hello()Ljava/lang/String;
+.method public static sum(II)I
     .limit stack 50
     .limit locals 50
-    ldc "Hello World!"
-    areturn
-.end method
-.method public static someNumber()I
-    .limit stack 50
-    .limit locals 50
-    ldc 20
+    iload_1
+    iload_0
+    iadd
+    istore_2
+    iload_2
     ireturn
 .end method

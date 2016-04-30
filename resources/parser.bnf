@@ -1,4 +1,4 @@
-token		::= keyword  | module   | function;
+token		::= keyword  | module   | function | variable;
 keyword     ::= print    | return;
 
 (* Building blocks *)
@@ -8,7 +8,6 @@ eq          ::= "=";
 id      	::= #'\w+';
 varName     ::= #'\w+';
 
-variable	::= varID <space*> <eq> <space*> expr;
 varID       ::= datatype <space+> id;
 
 (* Maths expressions - InstaParse example *)
@@ -39,12 +38,15 @@ modulename  ::= id;
 (* Functions *)
 function    ::= <"function" space+> funcname <space*> tuple <space* "->" space*> datatype <space* ":">;
 funcname    ::= id;
-funccall    ::= id <space*> tuple;
+funccall    ::= id <space*> callargs;
+callargs    ::= <"("> (<space*> (string | expr) <space* #',?'>)* <")">;
 return      ::= datatype;
 
 (* Keyword's definition *)
+variable	::= <indent> varID <space*> <eq> <space*> expr;
 print       ::= <indent "print" space+> (string | expr | funccall);
 return      ::= <indent "return" space+> (string | expr);
+
 
 (* No longer in use *)
 

@@ -1,0 +1,8 @@
+module vars
+
+function main([String] args) -> Void:
+    print sum(10, 30)
+
+function sum(Int a, Int b) -> Int:
+    Int c = b+a
+    return c
