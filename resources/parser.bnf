@@ -44,7 +44,7 @@ return      ::= datatype;
 
 (* Keyword's definition *)
 print       ::= <indent "print" space+> (string | expr | funccall);
-return      ::= <indent "return" space+> expr;
+return      ::= <indent "return" space+> (string | expr);
 
 (* No longer in use *)
 

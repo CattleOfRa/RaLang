@@ -27,7 +27,8 @@
   "Returns JVM type."
   [type]
   (case (str type)
-    ":int" (str "i")
+    ":int"    (str "i")
+    ":string" (str "a")
     (str type)))
 
 (defn getMethodType

@@ -1,4 +1,4 @@
-.class public funccall
+.class public mulfuncs
 .super java/lang/Object
 .method public <init>()V
     aload_0
@@ -9,21 +9,22 @@
     .limit stack 50
     .limit locals 50
     getstatic java/lang/System/out Ljava/io/PrintStream;
-    invokestatic funccall/sum()I
+    invokestatic mulfuncs/hello()Ljava/lang/String;
+    invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+    getstatic java/lang/System/out Ljava/io/PrintStream;
+    invokestatic mulfuncs/someNumber()I
     invokevirtual java/io/PrintStream/println(I)V
     return
 .end method
-.method public static sum()I
+.method public static hello()Ljava/lang/String;
     .limit stack 50
     .limit locals 50
-    ldc 5
-    ldc 10
-    ldc 2
-    isub
-    ldc 4
-    idiv
-    ldc 10
-    imul
-    iadd
+    ldc "Hello World!"
+    areturn
+.end method
+.method public static someNumber()I
+    .limit stack 50
+    .limit locals 50
+    ldc 20
     ireturn
 .end method
