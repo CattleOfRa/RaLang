@@ -1,0 +1,10 @@
+module legal
+
+function main([String] args) -> Void:
+    print factorial(1)
+
+function factorial(Int n) -> Int:
+    if n < 2:
+        return 1
+    else:
+        return n*factorial(n-1)

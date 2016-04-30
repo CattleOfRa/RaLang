@@ -93,8 +93,7 @@
   (def moduleName id))
 
 (defn genEndMethod
-  "Generates a end method."
-  []
+  "Generates a end method." []
   (write output1 ".end method"))
 
 (defn genFunction
