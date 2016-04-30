@@ -92,6 +92,11 @@
   (write output1 "    invokespecial java/lang/Object/<init>()V")
   (def moduleName id))
 
+(defn genEndMethod
+  "Generates a end method."
+  []
+  (write output1 ".end method"))
+
 (defn genFunction
   "Generates a new function.
     name  - Function's name.
@@ -99,7 +104,7 @@
     rt    - Function's return type."
   [name, ar, rt]
   (cond
-    (not (= lastWritten ".end method")) (genReturn output1 nil))
+    (not (= lastWritten ".end method")) (do (genReturn output1 nil) (genEndMethod)))
   (write output1 (str ".method public static " name ar rt))
   (write output1 "    .limit stack 50")
   (write output1 "    .limit locals 50")
@@ -115,8 +120,7 @@
     rt    - Function's return type."
   [file, rt]
   (def returnType (getType rt))
-  (write file (str indent returnType "return"))
-  (write file ".end method"))
+  (write file (str indent returnType "return")))
 
 (defn genFunctionCallPlaceHolder
   "Generates a placeholder for function calls."
@@ -219,7 +223,9 @@
     :varID      (storeVariables trst)
     :datatype   (convertDatatype tval)
     :print      (genPrintOrPlaceHolder tval)
-    :return     (genReturn output1 (tokenReader tval))
+    :return     (do
+                  (genReturn output1 (tokenReader tval))
+                  (genEndMethod))
     :string     (genLdc token)
     :toStr      (tokenReader tval)
     :expr       (tokenReader tval)

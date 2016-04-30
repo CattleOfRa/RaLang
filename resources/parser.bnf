@@ -3,8 +3,8 @@ keyword     ::= print    | return;
 
 (* Building blocks *)
 space		::= " ";
-indent      ::= #'\s{4}';
-eq          ::= "=";
+indent      ::= #'\s{4}'*;
+equal       ::= "=";
 id      	::= #'\w+';
 varName     ::= #'\w+';
 varID       ::= datatype <space+> id;
@@ -42,7 +42,7 @@ callargs    ::= <"("> (<space*> (string | expr) <space* #',?'>)* <")">;
 return      ::= datatype;
 
 (* Keyword's definition *)
-variable	::= <indent> varID <space*> <eq> <space*> expr;
+variable	::= <indent> varID <space*> <equal> <space*> expr;
 print       ::= <indent "print" space+> (string | expr | funccall);
 return      ::= <indent "return" space+> (string | expr);
 
@@ -54,4 +54,6 @@ return      ::= <indent "return" space+> (string | expr);
 <lt>        ::= "<";
 <gt>        ::= ">";
 booloper    ::= eq | le | ge | ne | lt | gt;
-boolexpr    ::= expr <space*> booloper <space*> expr;
+boolexpr    ::= expr <space*> booloper <space*> expr
+if          ::= <"if" space+> boolexpr <space* ":">;
+else        ::= <"else:">;
