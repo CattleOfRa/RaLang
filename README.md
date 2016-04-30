@@ -37,6 +37,19 @@ Last updated: 30/04/2016
       <li>[X] Store and load arguments from functions</li>
       <li>[X] Support for variables</li>
       <li>[ ] Generate conditions/if branches</li>
+        <ul>
+          <li>[ ] Single if and else statement</li>
+          <li>[ ] Multiple if statements</li>
+          <li>[ ] Boolean operations</li>
+            <ul>
+              <li>[ ] Equal</li>
+              <li>[ ] Not equal</li>
+              <li>[ ] Greater than</li>
+              <li>[ ] Less than</li>
+              <li>[ ] Greater than or equal to</li>
+              <li>[ ] Less than or equal to</li>
+            </ul>
+        </ul>
     </ul>
   </li>
   <li>[+] Testing compiler

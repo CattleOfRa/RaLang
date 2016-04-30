@@ -7,7 +7,6 @@ indent      ::= #'\s{4}';
 eq          ::= "=";
 id      	::= #'\w+';
 varName     ::= #'\w+';
-
 varID       ::= datatype <space+> id;
 
 (* Maths expressions - InstaParse example *)
@@ -47,16 +46,12 @@ variable	::= <indent> varID <space*> <eq> <space*> expr;
 print       ::= <indent "print" space+> (string | expr | funccall);
 return      ::= <indent "return" space+> (string | expr);
 
-
-(* No longer in use *)
-
-(* Maths expressions - Idea taken from the Dragon Book
-expr		::= expr add term | expr sub term | term;
-term		::= term mul factor | term div factor | factor;
-factor		::= num | '(' expr ')' | variable; *)
-
-(* Operators 
-add 		::= <space* "+" space*>;
-sub 		::= <space* "-" space*>;
-mul 		::= <space* "*" space*>;
-div 		::= <space* "/" space*>; *)
+(* Comparison /if branches *)
+<eq>        ::= "==";
+<le>        ::= "<=";
+<ge>        ::= ">=";
+<ne>        ::= "!=";
+<lt>        ::= "<";
+<gt>        ::= ">";
+booloper    ::= eq | le | ge | ne | lt | gt;
+boolexpr    ::= expr <space*> booloper <space*> expr;
