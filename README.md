@@ -11,7 +11,7 @@ Last updated: 30/04/2016
   <li>[X] Check if source file exists</li>
   <li>[X] Reading source file</li>
   <li>[X] Implement lexer and parser</li>
-  <li>[+] Code generation
+  <li>[ ] Code generation
     <ul>
       <li>[X] Generate class</li>
       <li>[X] Generate functions</li>
@@ -52,7 +52,7 @@ Last updated: 30/04/2016
         </ul>
     </ul>
   </li>
-  <li>[+] Testing compiler
+  <li>[ ] Testing compiler
     <ul>
       <li>[X] Program prints "Hello World" to the screen</li>
       <li>[X] Print multiple lines to the screen</li>
