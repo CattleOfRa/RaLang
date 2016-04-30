@@ -5,15 +5,15 @@
 
 (declare tokenReader)
 (declare genReturn)
-(def output1 "output-1.ra")
-(def output2 "output-2.ra")
-(def indent (string/join (repeat 4 " ")))
-(def j_string "Ljava/lang/String;")
-(def j_print "invokevirtual java/io/PrintStream/println")
-(def lastWritten "")
-(def funcsHash (hash-map))
+(def output1        "output-1.ra")
+(def output2        "output-2.ra")
+(def indent         (string/join (repeat 4 " ")))
+(def functionsTable (hash-map))
+(def j_string       "Ljava/lang/String;")
+(def j_print        "invokevirtual java/io/PrintStream/println")
 
-(defn initOutput []
+(defn initOutput
+  "Deletes output1 and output2 iff they already exist." []
   (.delete (clojure.java.io/file output1))
   (.delete (clojure.java.io/file output2)))
 
@@ -80,7 +80,7 @@
   (write output1 (str ".method public static " name ar rt))
   (write output1 "    .limit stack 50")
   (write output1 "    .limit locals 50")
-  (def funcsHash (merge funcsHash {name (str ar rt)})))
+  (def functionsTable (merge functionsTable {name (str ar rt)})))
 
 (defn genReturn
   "Generates the ending of the function.
@@ -107,8 +107,8 @@
       (def oCode (apply str (first oPart)))
       (def oArgs (apply str (second oPart)))
       (case oCode
-        "->fc" (write output2 (str indent "invokestatic " moduleName "/" oArgs (first (map funcsHash [oArgs]))))
-        "->pr" (write output2 (str indent j_print "(" (second (string/split (first (map funcsHash [oArgs])) #"\(.*\)")) ")V"))
+        "->fc" (write output2 (str indent "invokestatic " moduleName "/" oArgs (first (map functionsTable [oArgs]))))
+        "->pr" (write output2 (str indent j_print "(" (second (string/split (first (map functionsTable [oArgs])) #"\(.*\)")) ")V"))
         (write output2 line))))
   ; The following checks for proper ending to a simple program with only 1 main function.
   ; It checks if the last line ends in ".end method"
