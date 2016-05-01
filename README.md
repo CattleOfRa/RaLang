@@ -88,7 +88,7 @@ Hi there.
 Last updated: 01/05/2016
 
 #####multimaths.ra
-```python
+```ruby
 module multimaths
 
 function main([String] args) -> Void:
@@ -98,7 +98,7 @@ function main([String] args) -> Void:
 ```
 
 #####funccall.ra
-```python
+```ruby
 module funccall
 
 function main([String] args) -> Void:
@@ -109,7 +109,7 @@ function sum() -> Int:
 ```
 
 #####callhello.ra
-```python
+```ruby
 module callhello
 
 function main([String] args) -> Void:
@@ -121,7 +121,7 @@ function message(String text) -> String:
 ```
 
 #####mulvars.ra
-```python
+```ruby
 module mulvars
 
 function main([String] args) -> Void:
