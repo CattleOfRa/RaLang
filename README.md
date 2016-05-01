@@ -69,7 +69,7 @@ Last updated: 01/05/2016
 Last updated: 01/05/2016
 
 #####mulhello.ra
-```python
+```ruby
 module mulhello
 
 function main([String] args) -> Void:
