@@ -107,7 +107,8 @@
   (write output1 (str ".method public static " name ar rt))
   (write output1 "    .limit stack 50")
   (write output1 "    .limit locals 50")
-  (def functionsTable (merge functionsTable {name (str ar rt)})))
+  (def functionsTable (merge functionsTable {name (str ar rt)}))
+  (def labelCount 1))
 
 (defn storeFunctionName
   "Stores the current function name to enable us to create local variables."
@@ -195,46 +196,59 @@
   (write output1 (str indent (first expression)))
   (first (first expression)))
 
+(defn genIf
+  "Generates an if statement."
+  [token]
+  (println "GenIF ->" token)
+  (tokenReader (nth token 0)) ; left expression
+  (tokenReader (nth token 2)) ; right expression
+  ; bool operation, eg. eq, ge, le, ne
+  (def boolOperation (apply str (rest (str (first (second (nth token 1))))))) 
+  (write output1 (str indent "if_icmp" boolOperation " Label" labelCount)))
+
 (defn tokenReader
   "Reads a token."
   [token]
   (def tkey (first token))
   (def tval (second token))
   (def trst (rest token))
-  (println token)
   (cond
     (= tkey :funcname) (storeFunctionName (tokenReader tval)))
   
   (case tkey
     :token      (tokenReader tval)
     :keyword    (tokenReader tval)
+    :print      (genPrintOrPlaceHolder tval)
+    :if         (genIf (into () tval))
     :id         (str tval)
+    
     :module     (genModule (tokenReader tval))
     :modulename (tokenReader tval)
+    
     :function   (genFunction
                  (tokenReader tval)
                  (tokenReader (nth token 2))
                  (tokenReader (nth token 3)))
     :funcname   (tokenReader tval)
     :funccall   (genFunctionCallPlaceHolder tval)
-    :variable   (genVariable trst)
-    :varName    (genLocalVar tval)
-    :varID      (storeVariables trst)
-    :datatype   (convertDatatype tval)
-    :print      (genPrintOrPlaceHolder tval)
     :return     (do
                   (genReturn output1 (tokenReader tval))
                   (genEndMethod))
+
+    :variable   (genVariable trst)
+    :varName    (genLocalVar tval)
+    :varID      (storeVariables trst)
+    
+    :datatype   (convertDatatype tval)
     :string     (genLdc token)
-    :toStr      (tokenReader tval)
     :expr       (tokenReader tval)
-    :add        (genArithmetic "add" trst)
-    :sub        (genArithmetic "sub" trst)
-    :mul        (genArithmetic "mul" trst)
-    :div        (genArithmetic "div" trst)
     :num        (tokenReader tval)
     :int        (genLdc token)
     :float      (genLdc token)
     :double     (genLdc token)
     :tuple      (readTuple trst)
+    :add        (genArithmetic "add" trst)
+    :sub        (genArithmetic "sub" trst)
+    :mul        (genArithmetic "mul" trst)
+    :div        (genArithmetic "div" trst)
     token))

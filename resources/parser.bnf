@@ -1,5 +1,5 @@
 token		::= keyword  | module   | function | variable;
-keyword     ::= print    | return;
+keyword     ::= print    | return   | if       | else;
 
 (* Building blocks *)
 space		::= " ";
@@ -17,7 +17,7 @@ sub = add-sub <'-'> mul-div;
 <mul-div> = term | mul | div;
 mul = mul-div <'*'> term;
 div = mul-div <'/'> term;
-<term> = varName | num | <'('> add-sub <')'>;
+<term> = funccall | varName | num | <'('> add-sub <')'>;
 
 (* Data types *)
 datatype	::= "Int" | "Float" | "Double" | "String" | "Void" | array;
@@ -47,13 +47,11 @@ print       ::= <indent "print" space+> (string | expr | funccall);
 return      ::= <indent "return" space+> (string | expr);
 
 (* Comparison /if branches *)
-<eq>        ::= "==";
-<le>        ::= "<=";
-<ge>        ::= ">=";
-<ne>        ::= "!=";
-<lt>        ::= "<";
-<gt>        ::= ">";
-booloper    ::= eq | le | ge | ne | lt | gt;
-boolexpr    ::= expr <space*> booloper <space*> expr
-if          ::= <"if" space+> boolexpr <space* ":">;
-else        ::= <"else:">;
+eq        ::= <"==">;
+le        ::= <"<=" | "<">;
+ge        ::= <">=" | ">">;
+ne        ::= <"!=">;
+booloper    ::= eq | le | ge | ne;
+boolexpr    ::= expr <space*> booloper <space*> expr;
+if          ::= <indent "if" space+> boolexpr <space* ":">;
+else        ::= <indent "else:">;
