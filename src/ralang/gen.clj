@@ -157,8 +157,11 @@
 (defn genFunctionCallArgs
   "Pushes function call arguments to the stack."
   [args]
+  (println "genFunctionCallArgs ->" args)
+  (def lastArg "")
   (doseq [x args]
-    (tokenReader x)))
+    (def lastArg (tokenReader x)))
+  (lastArg))
 
 (defn genPrintOrPlaceHolder
   "Generates a print statement or a placeholder for a print statement."
@@ -209,13 +212,18 @@
   "Generates an else statement." []
   (write output1 (str indent "Label" labelCount ":")))
 
+(defn genFunctionCall
+  "Generate a function call." [token]
+  (def dType (tokenReader (nth token 2)))
+  (genFunctionCallPlaceHolder (nth token 1))
+  (str dType))
+
 (defn tokenReader
   "Reads a token."
   [token]
   (def tkey (first token))
   (def tval (second token))
   (def trst (rest token))
-  (println "token ->" token)
   (case tkey
     :token      (tokenReader tval)
     :keyword    (tokenReader tval)
@@ -228,15 +236,15 @@
     :modulename (tokenReader tval)
     
     :function   (genFunction (tokenReader tval) (tokenReader (nth token 2)) (tokenReader (nth token 3)))
-    :funcname   (do (storeFunctionName (tokenReader tval)) (tokenReader tval))
-    :funccall   (do
-                  (def dType (genFunctionCallArgs (rest (nth token 2))))
-                  (println ":funccall datatype ->" dType)
-                  (genFunctionCallPlaceHolder (nth token 1)))
-    :return     (do
-                  (def dType (tokenReader tval))
-                  (println ":return datatype ->" dType)
-                  (genReturn output1 dType))
+
+    :funcname   (do
+                  (storeFunctionName (tokenReader tval))
+                  (tokenReader tval))
+
+    :funccall   (genFunctionCall token)
+
+    :callargs   (tokenReader tval)
+    :return     (genReturn output1 (tokenReader tval))
 
     :variable   (genVariable trst)
     :varName    (genLocalVar tval)

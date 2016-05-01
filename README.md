@@ -5,7 +5,7 @@ Start Date:	 	18/03/2016<br />
 Description:	A compiler for RaLang written in clojure to compile source code into JVM bytecode.<br />
 
 # To-do
-Last updated: 30/04/2016
+Last updated: 01/05/2016
 
 <ul>
   <li>[X] Check if source file exists</li>
@@ -14,59 +14,59 @@ Last updated: 30/04/2016
   <li>[ ] Code generation
     <ul>
       <li>[X] Generate class</li>
-      <li>[X] Generate functions</li>
+      <li>[ ] Generate functions</li>
         <ul>
           <li>[X] Generate main function</li>
           <li>[X] Generate .endmethod to end function</li>
           <li>[X] Generate basic function (takes args and returns values)</li>
           <li>[X] Enable calling functions</li>
-          <li>[X] Calling functions with arguments</li>
-          <li>[ ] Expressions within function arguments</li>
+          <li>[X] Calling functions with 1 argument</li>
+          <li>[X] Expressions within function arguments</li>
+          <li>[ ] Calling functions with more than 1 argument</li>
         </ul>
       <li>[ ] Determine stack limit and local variables limit</li>
       <li>[X] Generate print statement</li>
-      <li>[ ] Perform basic calculations</li>
+      <li>[X] Perform basic calculations</li>
         <ul>
-          <li>[ ] Add, sub, mul, div</li>
+          <li>[X] Add, sub, mul, div</li>
             <ul>
               <li>[X] 2 numbers</li>
               <li>[X] 3 numbers</li>
               <li>[X] 1 number and a variable</li>
               <li>[X] 2 variables</li>
-              <li>[ ] 1 number and a function call</li>
+              <li>[X] 1 number and a function call</li>
             </ul>
         </ul>
       <li>[X] Store and load arguments from functions</li>
       <li>[X] Support for variables</li>
       <li>[ ] Generate conditions/if branches</li>
         <ul>
-          <li>[ ] Single if and else statement</li>
+          <li>[X] Single if and else statement</li>
           <li>[ ] Multiple if statements</li>
-          <li>[ ] Boolean operations</li>
+          <li>[X] Boolean operations</li>
             <ul>
-              <li>[ ] Equal</li>
-              <li>[ ] Not equal</li>
-              <li>[ ] Greater than</li>
-              <li>[ ] Less than</li>
-              <li>[ ] Greater than or equal to</li>
-              <li>[ ] Less than or equal to</li>
+              <li>[X] Equal</li>
+              <li>[X] Not equal</li>
+              <li>[X] Greater than/Greater than or equal to</li>
+              <li>[X] Less than/Less than or equal to</li>
             </ul>
         </ul>
     </ul>
   </li>
-  <li>[ ] Testing compiler
+  <li>[X] Testing compiler
     <ul>
       <li>[X] Program prints "Hello World" to the screen</li>
       <li>[X] Print multiple lines to the screen</li>
       <li>[X] Program adds two numbers and prints result</li>
       <li>[X] Print the output of a function which takes a string as an input and returns another string</li>
-      <li>[ ] Compile simple factorial function</li>
+      <li>[X] Compile simple factorial function</li>
+      <li>[X] Test all different conditionals</li>
     </ul>
   </li>
 </ul>
 
 # Example
-Last updated: 30/04/2016
+Last updated: 01/05/2016
 
 #####mulhello.ra
 ```python
@@ -85,7 +85,7 @@ Hi there.
 ```
 
 # More sample code
-Last updated: 29/04/2016
+Last updated: 01/05/2016
 
 #####multimaths.ra
 ```python
@@ -131,4 +131,21 @@ function main([String] args) -> Void:
 function sum(Int a, Int b) -> Int:
     Int c = a+b*2
     return c
+```
+
+#####factorial.ra
+```python
+module factorial
+
+function main([String] args) -> Void:
+    print "Calculating factorial of 5."
+    print factorial(5)
+    # 120
+
+function factorial(Int n) -> Int:
+    # Calculates the factorial of n
+    if n < 2:
+        return 1
+    else:
+        return n*factorial(n-1)
 ```
