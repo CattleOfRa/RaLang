@@ -134,7 +134,7 @@ function sum(Int a, Int b) -> Int:
 ```
 
 #####factorial.ra
-```python
+```ruby
 module factorial
 
 function main([String] args) -> Void:
