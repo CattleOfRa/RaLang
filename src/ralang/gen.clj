@@ -164,8 +164,8 @@
   "Generates a print statement or a placeholder for a print statement."
   [content]
   (write output1 "    getstatic java/lang/System/out Ljava/io/PrintStream;")
-  (cond
-    (= (first content) :funccall) (genFunctionCallArgs (rest (nth content 2))))
+  (comment (cond
+    (= (first content) :funccall) (genFunctionCallArgs (rest (nth content 2)))))
   (def type (tokenReader content))
   (case (str (first content))
     ":funccall" (write output1 (str "->pr" (second (second content))))
@@ -199,12 +199,15 @@
 (defn genIf
   "Generates an if statement."
   [token]
-  (println "GenIF ->" token)
   (tokenReader (nth token 0)) ; left expression
   (tokenReader (nth token 2)) ; right expression
   ; bool operation, eg. eq, ge, le, ne
   (def boolOperation (apply str (rest (str (first (second (nth token 1))))))) 
   (write output1 (str indent "if_icmp" boolOperation " Label" labelCount)))
+
+(defn genElse
+  "Generates an else statement." []
+  (write output1 (str indent "Label" labelCount ":")))
 
 (defn tokenReader
   "Reads a token."
@@ -212,28 +215,28 @@
   (def tkey (first token))
   (def tval (second token))
   (def trst (rest token))
-  (cond
-    (= tkey :funcname) (storeFunctionName (tokenReader tval)))
-  
+  (println "token ->" token)
   (case tkey
     :token      (tokenReader tval)
     :keyword    (tokenReader tval)
     :print      (genPrintOrPlaceHolder tval)
     :if         (genIf (into () tval))
+    :else       (genElse)
     :id         (str tval)
     
     :module     (genModule (tokenReader tval))
     :modulename (tokenReader tval)
     
-    :function   (genFunction
-                 (tokenReader tval)
-                 (tokenReader (nth token 2))
-                 (tokenReader (nth token 3)))
-    :funcname   (tokenReader tval)
-    :funccall   (genFunctionCallPlaceHolder tval)
+    :function   (genFunction (tokenReader tval) (tokenReader (nth token 2)) (tokenReader (nth token 3)))
+    :funcname   (do (storeFunctionName (tokenReader tval)) (tokenReader tval))
+    :funccall   (do
+                  (def dType (genFunctionCallArgs (rest (nth token 2))))
+                  (println ":funccall datatype ->" dType)
+                  (genFunctionCallPlaceHolder (nth token 1)))
     :return     (do
-                  (genReturn output1 (tokenReader tval))
-                  (genEndMethod))
+                  (def dType (tokenReader tval))
+                  (println ":return datatype ->" dType)
+                  (genReturn output1 dType))
 
     :variable   (genVariable trst)
     :varName    (genLocalVar tval)

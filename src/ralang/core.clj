@@ -37,6 +37,7 @@
     (doseq [x (remove empty? source)]
       (def parse (parser x))
       (gen/tokenReader parse)))
+  (gen/genEndMethod)
   (gen/genOutput2))
 
 (defn checkSource

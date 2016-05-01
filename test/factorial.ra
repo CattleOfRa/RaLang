@@ -1,5 +1,8 @@
 module factorial
 
+function main([String] args) -> Void:
+    print factorial(5)
+
 function factorial(Int n) -> Int:
     if n <= 1:
         return 1

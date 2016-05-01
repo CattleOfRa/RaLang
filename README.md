@@ -21,17 +21,19 @@ Last updated: 30/04/2016
           <li>[X] Generate basic function (takes args and returns values)</li>
           <li>[X] Enable calling functions</li>
           <li>[X] Calling functions with arguments</li>
+          <li>[ ] Expressions within function arguments</li>
         </ul>
       <li>[ ] Determine stack limit and local variables limit</li>
       <li>[X] Generate print statement</li>
-      <li>[X] Perform basic calculations</li>
+      <li>[ ] Perform basic calculations</li>
         <ul>
-          <li>[X] Add, sub, mul, div</li>
+          <li>[ ] Add, sub, mul, div</li>
             <ul>
               <li>[X] 2 numbers</li>
               <li>[X] 3 numbers</li>
               <li>[X] 1 number and a variable</li>
               <li>[X] 2 variables</li>
+              <li>[ ] 1 number and a function call</li>
             </ul>
         </ul>
       <li>[X] Store and load arguments from functions</li>

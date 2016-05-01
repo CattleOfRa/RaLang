@@ -1,5 +1,5 @@
 token		::= keyword  | module   | function | variable;
-keyword     ::= print    | return   | if       | else;
+keyword     ::= print    | return   | if       | else     | expr;
 
 (* Building blocks *)
 space		::= " ";
