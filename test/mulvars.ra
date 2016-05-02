@@ -1,7 +1,7 @@
 module mulvars
 
 function main([String] args) -> Void:
-    Int a = 30
+    Int a = 60
     print sum(a, 30)
 
 function sum(Int a, Int b) -> Int:

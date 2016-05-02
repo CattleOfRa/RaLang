@@ -1,11 +1,18 @@
 # RaLang
 
 Author:	 		Daniel Pacheco<br />
-Start Date:	 	18/03/2016<br />
-Description:	A compiler for RaLang written in clojure to compile source code into JVM bytecode.<br />
+Start Date:	 	02/05/2016<br />
+Description:	A compiler for RaLang written in clojure to compile source code into Jasmin (.j) which then compiles to JVM
+                bytecode. As stated in Jasmin's about page: "Generating a binary Java .class file is pretty fiddly. Its like
+                creating an a.out (or .exe) file by hand. Even using a Java package like JAS (a Java API for creating class
+                files, used internally by Jasmin and written by KB Sriram), you need to know a lot about the philosophy of the
+                Java Virtual Machine before you can write something at the Virtual Machine level and generate a Java class."
+                and "We wanted something that made it very easy for a student or programmer to explore the Java Virtual Machine,
+                or write a new language which targets the VM, without getting into the details of constant pool indices,
+                attribute tables".<br />
 
 # To-do
-Last updated: 01/05/2016
+Last updated: 02/05/2016
 
 <ul>
   <li>[X] Check if source file exists</li>
@@ -14,7 +21,7 @@ Last updated: 01/05/2016
   <li>[ ] Code generation
     <ul>
       <li>[X] Generate class</li>
-      <li>[ ] Generate functions</li>
+      <li>[X] Generate functions</li>
         <ul>
           <li>[X] Generate main function</li>
           <li>[X] Generate .endmethod to end function</li>
@@ -22,7 +29,7 @@ Last updated: 01/05/2016
           <li>[X] Enable calling functions</li>
           <li>[X] Calling functions with 1 argument</li>
           <li>[X] Expressions within function arguments</li>
-          <li>[ ] Calling functions with more than 1 argument</li>
+          <li>[X] Calling functions with more than 1 argument</li>
         </ul>
       <li>[ ] Determine stack limit and local variables limit</li>
       <li>[X] Generate print statement</li>
@@ -66,7 +73,7 @@ Last updated: 01/05/2016
 </ul>
 
 # Example
-Last updated: 01/05/2016
+Last updated: 02/05/2016
 
 #####mulhello.ra
 ```ruby
@@ -85,7 +92,7 @@ Hi there.
 ```
 
 # More sample code
-Last updated: 01/05/2016
+Last updated: 02/05/2016
 
 #####multimaths.ra
 ```ruby
@@ -131,6 +138,36 @@ function main([String] args) -> Void:
 function sum(Int a, Int b) -> Int:
     Int c = a+b*2
     return c
+```
+
+#####mulcompare.ra
+```ruby
+module mulcomp
+
+function main([String] args) -> Void:
+    print compare(2016, 2016)
+    # "Not same year."
+
+    print compare(2015, 2017)
+    # "Same year."
+
+    print notCompare(2016, 2016)
+    # "Not same year."
+
+    print notCompare(2015, 2017)
+    # "Same year."
+
+function notCompare(Int year1, Int year2) -> String:
+    if year1 != year2:
+        return "Not same year."
+    else:
+        return "Same year."
+
+function compare(Int year1, Int year2) -> String:
+    if year1 == year2:
+        return "Same year."
+    else:
+        return "Not same year."
 ```
 
 #####factorial.ra

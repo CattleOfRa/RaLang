@@ -154,15 +154,6 @@
   (write output1 (str "    ldc " (second content)))
   (first content))
 
-(defn genFunctionCallArgs
-  "Pushes function call arguments to the stack."
-  [args]
-  (println "genFunctionCallArgs ->" args)
-  (def lastArg "")
-  (doseq [x args]
-    (def lastArg (tokenReader x)))
-  (lastArg))
-
 (defn genPrintOrPlaceHolder
   "Generates a print statement or a placeholder for a print statement."
   [content]
@@ -231,25 +222,16 @@
     :if         (genIf (into () tval))
     :else       (genElse)
     :id         (str tval)
-    
     :module     (genModule (tokenReader tval))
     :modulename (tokenReader tval)
-    
     :function   (genFunction (tokenReader tval) (tokenReader (nth token 2)) (tokenReader (nth token 3)))
-
-    :funcname   (do
-                  (storeFunctionName (tokenReader tval))
-                  (tokenReader tval))
-
+    :funcname   (do (storeFunctionName (tokenReader tval)) (tokenReader tval))
     :funccall   (genFunctionCall token)
-
-    :callargs   (tokenReader tval)
+    :callargs   (do (doseq [x trst] (def dType (tokenReader x))) (str dType))
     :return     (genReturn output1 (tokenReader tval))
-
     :variable   (genVariable trst)
     :varName    (genLocalVar tval)
     :varID      (storeVariables trst)
-    
     :datatype   (convertDatatype tval)
     :string     (genLdc token)
     :expr       (tokenReader tval)
