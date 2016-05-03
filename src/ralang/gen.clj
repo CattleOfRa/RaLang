@@ -94,6 +94,8 @@
 
 (defn genEndMethod
   "Generates a end method." []
+  (cond
+    (not (.contains lastWritten "return")) (do (genReturn output1 nil) (genReturn output1 "")))
   (write output1 ".end method"))
 
 (defn genFunction
