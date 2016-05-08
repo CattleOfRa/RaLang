@@ -95,10 +95,10 @@ Hi there.
 Last updated: 08/05/2016
 
 #####Windows 10 - Factorial function
-![Windows Factorial Function](https://raw.githubusercontent.com/CattleOfRa/RaLang/master/screenshots/windows/factorial.png)
+![Windows Factorial Function](https://raw.githubusercontent.com/CattleOfRa/RaLang/master/screenshots/windows/windows_factorial.png)
 
 #####Ubuntu 15.10 - Factorial function
-![Ubuntu Factorial Function](https://raw.githubusercontent.com/CattleOfRa/RaLang/master/screenshots/ubuntu/factorial.png)
+![Ubuntu Factorial Function](https://raw.githubusercontent.com/CattleOfRa/RaLang/master/screenshots/ubuntu/ubuntu_factorial.png)
 
 # More sample code
 Last updated: 02/05/2016
