@@ -86,6 +86,11 @@ function main([String] args) -> Void:
 
 We can compile this code to Jasmin using `lein.bat run test/mulhello.ra`, this will generate `output.ra`. Then we can compile Jasmin Bytecode to JVM Bytecode using `java -jar ../jasmin/jasmin.jar output.ra` (in your case you might have to provide the full path to your Jasmin installation). To run our first application in Ralang we can type `java mulhello`, this will output 2 lines to the console:
 
+```
+Multi line hello world!
+Hi there.
+```
+
 # Screenshots
 Last updated: 08/05/2016
 
@@ -94,14 +99,6 @@ Last updated: 08/05/2016
 
 #####Ubuntu 15.10 - Factorial function
 ![Ubuntu Factorial Function](https://raw.githubusercontent.com/CattleOfRa/RaLang/master/screenshots/ubuntu/factorial.png)
-
-# More examples
-Last updated: 08/05/2016
-
-```
-Multi line hello world!
-Hi there.
-```
 
 # More sample code
 Last updated: 02/05/2016
