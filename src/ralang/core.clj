@@ -20,12 +20,10 @@
   "Find and remove empty lines and comments from the source code."
   [source]
   (def reComment #"\s*#.*")
-  (def sourceWithoutComment (clojure.string/replace source reComment ""))
-  (def reEmptyLine #"^[\s*|\t*]*$")
-  (def matchEmptyLine (re-matcher reEmptyLine sourceWithoutComment))
-  (cond
-    (= (re-find matchEmptyLine) true) source
-    :else sourceWithoutComment))
+  (def reEmptyLine #"^\s+$")
+  (def sourceWithoutComment
+    (clojure.string/replace source reComment ""))
+  (clojure.string/replace sourceWithoutComment reEmptyLine ""))
 
 (defn readSource
   "Read source file and remove empty lines."
@@ -40,18 +38,11 @@
   (gen/genEndMethod)
   (gen/genOutput2))
 
-(defn checkSource
-  "Check if source file exists."
-  [file]
-  (debugMessage ["Reading '" file "'"])
-  (cond
-    (.exists (as-file file)) (readSource file)
-    :else (debugMessage ["Source file '" file "' does not exist."])))
-
 (defn -main
   "RaLang's main function."
   [& args]
+  (if (= (count args) 0) (throw (Exception. "Wrong number of arguments.")))
+  (def fileName (nth args 0))
   (cond
-    (= (count args) 1) (checkSource (nth args 0))
-    :else (println "Wrong number of arguments."))
-  (debugMessage ["Finished compiling."]))
+    (.exists (as-file fileName)) (readSource fileName)
+    :else (throw (Exception. "Source file does not exist."))))
