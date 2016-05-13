@@ -12,7 +12,7 @@ Description:	A compiler for RaLang written in clojure to compile source code int
                 attribute tables".<br />
 
 # To-do
-Last updated: 02/05/2016
+Last updated: 13/05/2016
 
 <ul>
   <li>[X] Check if source file exists</li>
@@ -68,6 +68,7 @@ Last updated: 02/05/2016
       <li>[X] Print the output of a function which takes a string as an input and returns another string</li>
       <li>[X] Compile simple factorial function</li>
       <li>[X] Test all different conditionals</li>
+      <li>[X] Unit tests using Speclj</li>
     </ul>
   </li>
 </ul>
