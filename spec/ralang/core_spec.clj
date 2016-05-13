@@ -106,8 +106,8 @@
         (def e [:token [:variable [:varID [:datatype "Float"] [:id "speed"]] [:expr [:num [:float "32.5"]]]]])
         (should= e (parser "Float speed = 32.5")))
     (it "parser: String variable"
-        (def e [:token [:variable [:varID [:datatype "String"] [:id "name"]] [:expr [:num [:string "Daniel"]]]]])
-        (should= e (parser "String name = \"Daniel\"")))
+        (def e [:token [:variable [:varID [:datatype "String"] [:id "name"]] [:expr [:num [:string "leString"]]]]])
+        (should= e (parser "String name = \"leString\"")))
     (it "parser: New function with 0 args and returns Void"
         (def e [:token [:function [:funcname [:id "leFunction"]] [:tuple] [:datatype "Void"]]])
         (should= e (parser "function leFunction() -> Void:")))
@@ -323,6 +323,30 @@
         (should= e (parser "if leVariable > raVariable:")))
     (it "parser: If Variable is different from another Variable"
         (def e [:token [:keyword [:if [:boolexpr [:expr [:varName "leVariable"]] [:booloper [:ne]] [:expr [:varName "raVariable"]]]]]])
-        (should= e (parser "if leVariable != raVariable:"))))
+        (should= e (parser "if leVariable != raVariable:")))
+    (it "parser: Else"
+        (should= [:token [:keyword [:else]]] (parser "else:")))
+    (it "parser: Return an Int"
+        (should= [:token [:keyword [:return [:expr [:num [:int "68"]]]]]] (parser "return 68")))
+    (it "parser: Return an Float"
+        (should= [:token [:keyword [:return [:expr [:num [:float "68.8"]]]]]] (parser "return 68.8")))
+    (it "parser: Return an String"
+        (should= [:token [:keyword [:return [:string "\"leString\""]]]] (parser "return \"leString\"")))
+    (it "parser: Return the result of adding 2 Ints together"
+        (should= [:token [:keyword [:return [:expr [:add [:num [:int "65"]] [:num [:int "9"]]]]]]] (parser "return 65+9")))
+    (it "parser: Return the result of function call"
+        (def e [:token
+               [:keyword
+               [:return
+               [:expr
+                    [:mul
+                        [:varName "n"]
+                        [:funccall [:id "factorial"]
+                            [:callargs
+                                [:expr
+                                    [:sub
+                                        [:varName "n"]
+                                        [:num [:int "1"]]]]]]]]]]])
+        (should= e (parser "return n*factorial(n-1)"))))
 
 (run-specs)
