@@ -195,6 +195,134 @@
                         [:varID [:datatype "Int"] [:id "a"]]
                         [:varID [:datatype "Int"] [:id "b"]]]
                     [:datatype "String"]]])
-        (should= e (parser "function leFunction(Int a, Int b) -> String:"))))
+        (should= e (parser "function leFunction(Int a, Int b) -> String:")))
+    (it "parser: Function call with 0 args"
+        (should= [:token [:keyword [:expr [:funccall [:id "leFunction"] [:callargs]]]]] (parser "leFunction()")))
+    (it "parser: Function call with 1 arg"
+        (def e [:token [:keyword [:expr [:funccall [:id "leFunction"] [:callargs [:expr [:num [:int "5"]]]]]]]])
+        (should= e (parser "leFunction(5)")))
+    (it "parser: Function call with 2 args"
+        (def e [:token
+               [:keyword
+               [:expr
+               [:funccall
+                    [:id "leFunction"]
+                    [:callargs
+                        [:expr [:num [:int "30"]]]
+                        [:expr [:num [:int "15"]]]]]]]])
+        (should= e (parser "leFunction(30, 15)")))
+    (it "parser: Function call with arithmetic as 1 arg"
+        (def e [:token
+               [:keyword
+               [:expr
+               [:funccall
+                    [:id "leFunction"]
+                    [:callargs
+                        [:expr
+                            [:add
+                                [:num [:int "7"]]
+                                [:num [:int "8"]]]]]]]]])
+        (should= e (parser "leFunction(7+8)")))
+    (it "parser: Function call with arithmetic as 1 arg and 1 variable"
+        (def e [:token
+               [:keyword
+               [:expr
+               [:funccall
+                    [:id "leFunction"]
+                    [:callargs
+                        [:expr
+                            [:add
+                                [:num [:int "7"]]
+                                [:num [:int "8"]]]]
+                        [:expr
+                            [:varName "leVariable"]]]]]]])
+        (should= e (parser "leFunction(7+8, leVariable)")))
+    (it "parser: Function call with arithmetic as 1 arg, 1 variable and 1 string"
+        (def e [:token
+               [:keyword
+               [:expr
+               [:funccall
+                    [:id "leFunction"]
+                    [:callargs
+                        [:expr
+                            [:add
+                                [:num [:int "7"]]
+                                [:num [:int "8"]]]]
+                        [:expr
+                            [:varName "leVariable"]]
+                        [:string "\"leString\""]]]]]])
+        (should= e (parser "leFunction(7+8, leVariable, \"leString\")")))
+    (it "parser: If Int less than another Int"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:num [:int "2"]]] [:booloper [:le]] [:expr [:num [:int "10"]]]]]]])
+        (should= e (parser "if 2 < 10:")))
+    (it "parser: If Int less than or equal to another Int"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:num [:int "3"]]] [:booloper [:le]] [:expr [:num [:int "9"]]]]]]])
+        (should= e (parser "if 3 <= 9:")))
+    (it "parser: If Int is equal to another Int"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:num [:int "4"]]] [:booloper [:eq]] [:expr [:num [:int "4"]]]]]]])
+        (should= e (parser "if 4 == 4:")))
+    (it "parser: If Int greater than or equal to another Int"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:num [:int "5"]]] [:booloper [:ge]] [:expr [:num [:int "4"]]]]]]])
+        (should= e (parser "if 5 >= 4:")))
+    (it "parser: If Int greater than another Int"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:num [:int "6"]]] [:booloper [:ge]] [:expr [:num [:int "3"]]]]]]])
+        (should= e (parser "if 6 > 3:")))
+    (it "parser: If Int is different from another Int"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:num [:int "7"]]] [:booloper [:ne]] [:expr [:num [:int "1"]]]]]]])
+        (should= e (parser "if 7 != 1:")))
+    (it "parser: If Int less than another Variable"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:num [:int "2"]]] [:booloper [:le]] [:expr [:varName "leVariable"]]]]]])
+        (should= e (parser "if 2 < leVariable:")))
+    (it "parser: If Int less than or equal to another Variable"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:num [:int "3"]]] [:booloper [:le]] [:expr [:varName "leVariable"]]]]]])
+        (should= e (parser "if 3 <= leVariable:")))
+    (it "parser: If Int is equal to another Variable"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:num [:int "4"]]] [:booloper [:eq]] [:expr [:varName "leVariable"]]]]]])
+        (should= e (parser "if 4 == leVariable:")))
+    (it "parser: If Int greater than or equal to another Variable"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:num [:int "5"]]] [:booloper [:ge]] [:expr [:varName "leVariable"]]]]]])
+        (should= e (parser "if 5 >= leVariable:")))
+    (it "parser: If Int greater than another Variable"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:num [:int "6"]]] [:booloper [:ge]] [:expr [:varName "leVariable"]]]]]])
+        (should= e (parser "if 6 > leVariable:")))
+    (it "parser: If Int is different from another Variable"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:num [:int "7"]]] [:booloper [:ne]] [:expr [:varName "leVariable"]]]]]])
+        (should= e (parser "if 7 != leVariable:")))
+    (it "parser: If Variable less than another Int"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:varName "leVariable"]] [:booloper [:le]] [:expr [:num [:int "10"]]]]]]])
+        (should= e (parser "if leVariable < 10:")))
+    (it "parser: If Variable less than or equal to another Int"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:varName "leVariable"]] [:booloper [:le]] [:expr [:num [:int "9"]]]]]]])
+        (should= e (parser "if leVariable <= 9:")))
+    (it "parser: If Variable is equal to another Int"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:varName "leVariable"]] [:booloper [:eq]] [:expr [:num [:int "4"]]]]]]])
+        (should= e (parser "if leVariable == 4:")))
+    (it "parser: If Variable greater than or equal to another Int"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:varName "leVariable"]] [:booloper [:ge]] [:expr [:num [:int "4"]]]]]]])
+        (should= e (parser "if leVariable >= 4:")))
+    (it "parser: If Variable greater than another Int"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:varName "leVariable"]] [:booloper [:ge]] [:expr [:num [:int "3"]]]]]]])
+        (should= e (parser "if leVariable > 3:")))
+    (it "parser: If Variable is different from another Int"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:varName "leVariable"]] [:booloper [:ne]] [:expr [:num [:int "1"]]]]]]])
+        (should= e (parser "if leVariable != 1:")))
+    (it "parser: If Variable less than another Variable"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:varName "leVariable"]] [:booloper [:le]] [:expr [:varName "raVariable"]]]]]])
+        (should= e (parser "if leVariable < raVariable:")))
+    (it "parser: If Variable less than or equal to another Variable"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:varName "leVariable"]] [:booloper [:le]] [:expr [:varName "raVariable"]]]]]])
+        (should= e (parser "if leVariable <= raVariable:")))
+    (it "parser: If Variable is equal to another Variable"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:varName "leVariable"]] [:booloper [:eq]] [:expr [:varName "raVariable"]]]]]])
+        (should= e (parser "if leVariable == raVariable:")))
+    (it "parser: If Variable greater than or equal to another Variable"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:varName "leVariable"]] [:booloper [:ge]] [:expr [:varName "raVariable"]]]]]])
+        (should= e (parser "if leVariable >= raVariable:")))
+    (it "parser: If Variable greater than another Variable"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:varName "leVariable"]] [:booloper [:ge]] [:expr [:varName "raVariable"]]]]]])
+        (should= e (parser "if leVariable > raVariable:")))
+    (it "parser: If Variable is different from another Variable"
+        (def e [:token [:keyword [:if [:boolexpr [:expr [:varName "leVariable"]] [:booloper [:ne]] [:expr [:varName "raVariable"]]]]]])
+        (should= e (parser "if leVariable != raVariable:"))))
 
 (run-specs)
