@@ -1,9 +1,9 @@
 echo "File name: "
 read file
 lein run $file
-java -jar ../jasmin/jasmin.jar output-2.ra
+java -jar ../jasmin/jasmin.jar output2
+rm output2
+rm output1
 echo "Class name: "
 read class
-rm output-2.ra
-rm output-1.ra
 java $class

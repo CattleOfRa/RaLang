@@ -1,9 +1,9 @@
 @echo off
 set /p file="File name: "
 call lein run %file%
-java -jar ../jasmin/jasmin.jar output-2.ra
+java -jar ../jasmin/jasmin.jar output2
+del output1
+del output2
 set /p class="Class name: "
 java %class%
-del output-1.ra
-del output-2.ra
 pause

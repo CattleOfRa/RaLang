@@ -5,8 +5,8 @@
 
 (declare tokenReader)
 (declare genReturn)
-(def output1        "output-1.ra")
-(def output2        "output-2.ra")
+(def output1        "output1")
+(def output2        "output2")
 (def indent         (string/join (repeat 4 " ")))
 (def functionsTable (hash-map))
 (def j_string       "Ljava/lang/String;")

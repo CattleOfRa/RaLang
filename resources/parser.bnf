@@ -32,7 +32,7 @@ tuple       ::= <"("> (<space*> varID <space* #',?'>)* <")">;
 
 (* Modules *)
 module		::= <"module"> <space+> modulename;
-modulename  ::= id;
+modulename  ::= id | #"\w+.\w+";
 
 (* Functions *)
 function    ::= <"function" space+> funcname <space*> tuple <space* "->" space*> datatype <space* ":">;

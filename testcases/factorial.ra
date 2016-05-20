@@ -1,9 +1,5 @@
-module factorial
-
-function main([String] args) -> Void:
-    print "Calculating factorial of 5."
-    print factorial(5)
-    # 120
+module maths.factorial
+# Name of the module to be imported by Java
 
 function factorial(Int n) -> Int:
     # Calculates the factorial of n

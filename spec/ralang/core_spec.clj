@@ -1,6 +1,7 @@
 (ns ralang.core-spec
     (:require [speclj.core :refer :all])
-    (:require [ralang.core :refer :all]))
+    (:require [ralang.core :refer :all])
+    (:require [ralang.gen :refer :all]))
     
 (defn specljTest [] true)
     
