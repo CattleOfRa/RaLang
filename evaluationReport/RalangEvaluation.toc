@@ -1,0 +1,75 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Introduction}{2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Achievement of Objectives}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Methodology, Design and Implementation}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Testing}{8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Functional requirements}{8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Non-functional requirements}{8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Analysis, Discussion and Critical Appraisal}{10}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Conclusion}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Appendix \numberline {A}Source code for Ralang}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.1}src/ralang/core.clj}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2}src/ralang/gen.clj}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.3}spec/ralang/core\_spec.clj}{21}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.4}resources/parser.bnf}{27}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Appendix \numberline {B}Running test cases}{29}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.1}Sample program's Source Code}{29}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.2}resources/parser.bnf}{29}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.3}Linux - Ubuntu 15.10 64-bit}{32}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.4}Windows - Windows 10 32-bit}{38}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Appendix \numberline {C}Java integration}{44}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Appendix \numberline {D}High-level design}{45}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Appendix \numberline {E}Proposal - Introduction}{46}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {E.1}Aim}{46}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {E.2}Objectives}{46}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {E.3}Research methodologies}{46}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Appendix \numberline {F}Proposal - Literature review}{47}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {F.1}Introduction}{47}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {F.2}Introductory programming languages}{47}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {F.3}Conclusion}{48}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Appendix \numberline {G}Proposal - Design}{49}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {G.1}Requirement specification}{49}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {G.2}Development methodologies}{49}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Appendix \numberline {H}Research Questionnaire}{50}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Appendix \numberline {I}Questionnaires}{52}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Appendix \numberline {J}Research Questionnaire - Results}{61}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Appendix \numberline {K}Presentation}{62}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {K.1}Slides}{62}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {K.2}Handout}{67}

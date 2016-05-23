@@ -1,0 +1,11 @@
+module compare
+
+function main([String] args) -> Void:
+    print compare(2016, 2016)
+    print compare(2015, 2017)
+
+function compare(Int year1, Int year2) -> String:
+    if year1 == year2:
+        return "Same year."
+    else:
+        return "Not same year."

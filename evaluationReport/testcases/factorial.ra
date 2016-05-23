@@ -1,0 +1,13 @@
+module factorial
+
+function main([String] args) -> Void:
+    print "Calculating factorial of 5."
+    print factorial(5)
+    # 120
+
+function factorial(Int n) -> Int:
+    # Calculates the factorial of n
+    if n < 2:
+        return 1
+    else:
+        return n*factorial(n-1)

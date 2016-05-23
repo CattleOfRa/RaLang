@@ -1,0 +1,5 @@
+module printnum
+
+function main([String] args) -> Void:
+    print "Simple addition."
+    print 150+50

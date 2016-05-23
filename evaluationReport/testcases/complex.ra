@@ -1,0 +1,7 @@
+module complex
+
+function main([String] args) -> Void:
+    print maths()
+    
+function maths() -> Int:
+    return 10*(2*3-2*2)/2+50

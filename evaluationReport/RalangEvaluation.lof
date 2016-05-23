@@ -1,0 +1,137 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Survey results for Ralang appears to be readable and easy to follow}}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Running 72 different unit test on Windows 10 32-bit}}{4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Test-driven development diagram showing development methodology}}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Emacs used as a development environment for developing Ralang}}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Evaluation of Research Questionnaire for a group of 9 students}}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces An example of a factorial function written in JVM bytecode}}{10}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces An example of a stack overflow}}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces An example of an Int resulting in a stack overflow}}{12}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Compiling and running callhello.ra on Ubuntu 15.10 64-bit}}{32}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Compiling and running compare.ra on Ubuntu 15.10 64-bit}}{32}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Compiling and running complex.ra on Ubuntu 15.10 64-bit}}{33}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.4}{\ignorespaces Compiling and running factorial.ra on Ubuntu 15.10 64-bit}}{33}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.5}{\ignorespaces Compiling and running funccall.ra on Ubuntu 15.10 64-bit}}{33}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.6}{\ignorespaces Compiling and running helloworld.ra on Ubuntu 15.10 64-bit}}{34}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.7}{\ignorespaces Compiling and running legal.ra on Ubuntu 15.10 64-bit}}{34}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.8}{\ignorespaces Compiling and running mulcomp.ra on Ubuntu 15.10 64-bit}}{34}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.9}{\ignorespaces Compiling and running mulfuncs.ra on Ubuntu 15.10 64-bit}}{35}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.10}{\ignorespaces Compiling and running mulhello.ra on Ubuntu 15.10 64-bit}}{35}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.11}{\ignorespaces Compiling and running multimaths.ra on Ubuntu 15.10 64-bit}}{35}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.12}{\ignorespaces Compiling and running mulvars.ra on Ubuntu 15.10 64-bit}}{36}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.13}{\ignorespaces Compiling and running notcompare.ra on Ubuntu 15.10 64-bit}}{36}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.14}{\ignorespaces Compiling and running printnum.ra on Ubuntu 15.10 64-bit}}{36}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.15}{\ignorespaces Compiling and running subtwo.ra on Ubuntu 15.10 64-bit}}{37}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.16}{\ignorespaces Compiling and running vars.ra on Ubuntu 15.10 64-bit}}{37}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.17}{\ignorespaces Compiling and running varstring.ra on Ubuntu 15.10 64-bit}}{37}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.18}{\ignorespaces Compiling and running callhello.ra on Windows 10 32-bit}}{38}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.19}{\ignorespaces Compiling and running compare.ra on Windows 10 32-bit}}{38}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.20}{\ignorespaces Compiling and running complex.ra on Windows 10 32-bit}}{38}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.21}{\ignorespaces Compiling and running factorial.ra on Windows 10 32-bit}}{39}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.22}{\ignorespaces Compiling and running funccall.ra on Windows 10 32-bit}}{39}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.23}{\ignorespaces Compiling and running helloworld.ra on Windows 10 32-bit}}{39}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.24}{\ignorespaces Compiling and running legal.ra on Windows 10 32-bit}}{40}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.25}{\ignorespaces Compiling and running mulcomp.ra on Windows 10 32-bit}}{40}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.26}{\ignorespaces Compiling and running mulfuncs.ra on Windows 10 32-bit}}{40}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.27}{\ignorespaces Compiling and running mulhello.ra on Windows 10 32-bit}}{41}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.28}{\ignorespaces Compiling and running multimaths.ra on Windows 10 32-bit}}{41}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.29}{\ignorespaces Compiling and running mulvars.ra on Windows 10 32-bit}}{41}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.30}{\ignorespaces Compiling and running notcompare.ra on Windows 10 32-bit}}{42}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.31}{\ignorespaces Compiling and running printnum.ra on Windows 10 32-bit}}{42}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.32}{\ignorespaces Compiling and running subtwo.ra on Windows 10 32-bit}}{42}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.33}{\ignorespaces Compiling and running vars.ra on Windows 10 32-bit}}{43}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.34}{\ignorespaces Compiling and running varstring.ra on Windows 10 32-bit}}{43}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Importing Ralang module into Java application}}{44}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Running Java application after importing Ralang class}}{44}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {D.1}{\ignorespaces High level design of Ralang compiler}}{45}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {F.1}{\ignorespaces Non-passing students grouped by programming language}}{47}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {H.1}{\ignorespaces Research Questionnaire about Ralang's syntax - Page 1}}{50}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {H.2}{\ignorespaces Research Questionnaire about Ralang's syntax - Page 2}}{51}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {I.1}{\ignorespaces Research Questionnaire - Answer sheet number 1}}{52}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {I.2}{\ignorespaces Research Questionnaire - Answer sheet number 2}}{53}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {I.3}{\ignorespaces Research Questionnaire - Answer sheet number 3}}{54}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {I.4}{\ignorespaces Research Questionnaire - Answer sheet number 4}}{55}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {I.5}{\ignorespaces Research Questionnaire - Answer sheet number 5}}{56}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {I.6}{\ignorespaces Research Questionnaire - Answer sheet number 6}}{57}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {I.7}{\ignorespaces Research Questionnaire - Answer sheet number 7}}{58}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {I.8}{\ignorespaces Research Questionnaire - Answer sheet number 8}}{59}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {I.9}{\ignorespaces Research Questionnaire - Answer sheet number 9}}{60}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {K.1}{\ignorespaces Presentation slides, demonstration and viva slides - Introduction}}{62}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {K.2}{\ignorespaces Presentation slides, demonstration and viva slides - Overview}}{62}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {K.3}{\ignorespaces Presentation slides, demonstration and viva slides - Literature}}{63}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {K.4}{\ignorespaces Presentation slides, demonstration and viva slides - Technologies and tools}}{63}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {K.5}{\ignorespaces Presentation slides, demonstration and viva slides - Design and implementation}}{64}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {K.6}{\ignorespaces Presentation slides, demonstration and viva slides - Tests and questionnaire results}}{64}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {K.7}{\ignorespaces Presentation slides, demonstration and viva slides - Development process}}{65}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {K.8}{\ignorespaces Presentation slides, demonstration and viva slides - Technical issues}}{65}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {K.9}{\ignorespaces Presentation slides, demonstration and viva slides - Further work}}{66}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {K.10}{\ignorespaces Presentation slides, demonstration and viva slides - Resources}}{66}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {K.11}{\ignorespaces Leaflet explaining how to get started with Ralang}}{67}

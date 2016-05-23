@@ -1,0 +1,7 @@
+module varstring
+
+function main([String] args) -> Void:
+    print message("Hello there!")
+
+function message(String text) -> String:
+    return text

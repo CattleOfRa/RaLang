@@ -1,0 +1,5 @@
+module multimaths
+
+function main([String] args) -> Void:
+    print "Addition, subtraction, multiplication and division."
+    print 10+10*(6-2)/2

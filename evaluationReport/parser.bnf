@@ -1,0 +1,57 @@
+token		::= keyword  | module   | function | variable;
+keyword     ::= print    | return   | if       | else     | expr;
+
+(* Building blocks *)
+space		::= " ";
+indent      ::= #'\s{4}'*;
+equal       ::= "=";
+id      	::= #'\w+';
+varName     ::= #'\w+';
+varID       ::= datatype <space+> id;
+
+(* Maths expressions - InstaParse example *)
+expr = add-sub;
+<add-sub> = mul-div | add | sub;
+add = add-sub <'+'> mul-div;
+sub = add-sub <'-'> mul-div;
+<mul-div> = term | mul | div;
+mul = mul-div <'*'> term;
+div = mul-div <'/'> term;
+<term> = funccall | varName | num | <'('> add-sub <')'>;
+
+(* Data types *)
+datatype	::= "Int" | "Float" | "Double" | "String" | "Void" | array;
+num 		::= int | float;
+int		    ::= #'-?\d+';
+float		::= #'-?\d+\.\d+';
+string      ::= #'".*"';
+array       ::= <"[" space*> datatype <space* "]">;
+tuple       ::= <"("> (<space*> varID <space* #',?'>)* <")">;
+<intString> ::= #'"-?\d+"';
+<fltString> ::= #'"-?\d+.\d+"';
+
+(* Modules *)
+module		::= <"module"> <space+> modulename;
+modulename  ::= id | #"\w+.\w+";
+
+(* Functions *)
+function    ::= <"function" space+> funcname <space*> tuple <space* "->" space*> datatype <space* ":">;
+funcname    ::= id;
+funccall    ::= id <space*> callargs;
+callargs    ::= <"("> (<space*> (string | expr) <space* #',?'>)* <")">;
+return      ::= datatype;
+
+(* Keyword's definition *)
+variable	::= <indent> varID <space*> <equal> <space*> expr;
+print       ::= <indent "print" space+> (string | expr | funccall);
+return      ::= <indent "return" space+> (string | expr);
+
+(* Comparison /if branches *)
+eq        ::= <"==">;
+le        ::= <"<=" | "<">;
+ge        ::= <">=" | ">">;
+ne        ::= <"!=">;
+booloper    ::= eq | le | ge | ne;
+boolexpr    ::= expr <space*> booloper <space*> expr;
+if          ::= <indent "if" space+> boolexpr <space* ":">;
+else        ::= <indent "else:">;

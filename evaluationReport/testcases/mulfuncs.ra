@@ -1,0 +1,11 @@
+module mulfuncs
+
+function main([String] args) -> Void:
+    print hello()
+    print someNumber()
+    
+function hello() -> String:
+    return "Hello World!"
+    
+function someNumber() -> Int:
+    return 20

@@ -1,0 +1,2210 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.17)  20 MAY 2016 09:12
+entering extended mode
+**RalangEvaluation.tex
+(RalangEvaluation.tex
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 68 languages loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty"
+\wrapoverhang=\dimen105
+\WF@size=\dimen106
+\c@WF@wrappedlines=\count88
+\WF@box=\box26
+\WF@everypar=\toks15
+Package: wrapfig 2003/01/31  v 3.6
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count89
+\float@exts=\toks16
+\float@box=\box27
+\@float@everytoks=\toks17
+\@floatcapt=\box28
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\sidecap\sidecap.sty"
+Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\SC@BOXWD=\dimen107
+\SC@CAPWD=\dimen108
+\SC@tempdima=\dimen109
+\SC@tempdimb=\dimen110
+\c@SC@C=\count90
+\SC@BOX=\box29
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count91
+\Gm@cntv=\count92
+\c@Gm@tempcnt=\count93
+\Gm@bindingoffset=\dimen111
+\Gm@wd@mp=\dimen112
+\Gm@odd@mp=\dimen113
+\Gm@even@mp=\dimen114
+\Gm@layoutwidth=\dimen115
+\Gm@layoutheight=\dimen116
+\Gm@layouthoffset=\dimen117
+\Gm@layoutvoffset=\dimen118
+\Gm@dimlist=\toks18
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty"
+Package: biblatex 2014/06/25 v2.9a programmable bibliographies (PK/JW/AB)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex1.sty"
+Package: biblatex1 2014/06/25 v2.9a programmable bibliographies (bibtex) (PK/JW
+/AB)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
+Package: etoolbox 2015/03/10 v2.1b e-TeX tools for LaTeX (JAW)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\misc\etex.sty"
+Package: etex 2015/03/02 v2.1 eTeX basic definition package (PEB,DPC)
+\et@xins=\count94
+)
+\etb@tempcnta=\count95
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\logreq\logreq.sty"
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count96
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\logreq\logreq.def"
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count97
+\c@listtotal=\count98
+\c@listcount=\count99
+\c@liststart=\count100
+\c@liststop=\count101
+\c@citecount=\count102
+\c@citetotal=\count103
+\c@multicitecount=\count104
+\c@multicitetotal=\count105
+\c@instcount=\count106
+\c@maxnames=\count107
+\c@minnames=\count108
+\c@maxitems=\count109
+\c@minitems=\count110
+\c@citecounter=\count111
+\c@savedcitecounter=\count112
+\c@uniquelist=\count113
+\c@uniquename=\count114
+\c@refsection=\count115
+\c@refsegment=\count116
+\c@maxextrayear=\count117
+\c@maxextraalpha=\count118
+\c@abbrvpenalty=\count119
+\c@highnamepenalty=\count120
+\c@lownamepenalty=\count121
+\c@maxparens=\count122
+\c@parenlevel=\count123
+\blx@tempcnta=\count124
+\blx@tempcntb=\count125
+\blx@tempcntc=\count126
+\blx@maxsection=\count127
+\blx@maxsegment=\count128
+\blx@notetype=\count129
+\blx@parenlevel@text=\count130
+\blx@parenlevel@foot=\count131
+\labelnumberwidth=\skip43
+\labelalphawidth=\skip44
+\shorthandwidth=\skip45
+\biblabelsep=\skip46
+\bibitemsep=\skip47
+\bibnamesep=\skip48
+\bibinitsep=\skip49
+\bibparsep=\skip50
+\bibhang=\skip51
+\blx@auxin=\read1
+\blx@auxout=\write3
+\c@mincomprange=\count132
+\c@maxcomprange=\count133
+\c@mincompwidth=\count134
+\c@labelname=\count135
+\c@savedlabelname=\count136
+\c@author=\count137
+\c@savedauthor=\count138
+\c@shortauthor=\count139
+\c@savedshortauthor=\count140
+\c@editor=\count141
+\c@savededitor=\count142
+\c@editora=\count143
+\c@savededitora=\count144
+\c@editorb=\count145
+\c@savededitorb=\count146
+\c@editorc=\count147
+\c@savededitorc=\count148
+\c@shorteditor=\count149
+\c@savedshorteditor=\count150
+\c@bookauthor=\count151
+\c@savedbookauthor=\count152
+\c@translator=\count153
+\c@savedtranslator=\count154
+\c@annotator=\count155
+\c@savedannotator=\count156
+\c@commentator=\count157
+\c@savedcommentator=\count158
+\c@introduction=\count159
+\c@savedintroduction=\count160
+\c@foreword=\count161
+\c@savedforeword=\count162
+\c@afterword=\count163
+\c@savedafterword=\count164
+\c@holder=\count165
+\c@savedholder=\count166
+\c@namea=\count167
+\c@savednamea=\count168
+\c@nameb=\count169
+\c@savednameb=\count170
+\c@namec=\count171
+\c@savednamec=\count172
+\c@institution=\count173
+\c@savedinstitution=\count174
+\c@language=\count175
+\c@savedlanguage=\count176
+\c@location=\count177
+\c@savedlocation=\count178
+\c@organization=\count179
+\c@savedorganization=\count180
+\c@origlocation=\count181
+\c@savedoriglocation=\count182
+\c@origpublisher=\count183
+\c@savedorigpublisher=\count184
+\c@pageref=\count185
+\c@savedpageref=\count186
+\c@publisher=\count187
+\c@savedpublisher=\count188
+\c@lista=\count189
+\c@savedlista=\count190
+\c@listb=\count191
+\c@savedlistb=\count192
+\c@listc=\count193
+\c@savedlistc=\count194
+\c@listd=\count195
+\c@savedlistd=\count196
+\c@liste=\count197
+\c@savedliste=\count198
+\c@listf=\count199
+\c@savedlistf=\count200
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-compat.def"
+File: blx-compat.def 2014/06/25 v2.9a biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.def"
+File: biblatex.def 
+\c@textcitecount=\count201
+\c@textcitetotal=\count202
+\c@textcitemaxnames=\count203
+\c@biburlnumpenalty=\count204
+\c@biburlucpenalty=\count205
+\c@biburllcpenalty=\count206
+\c@smartand=\count207
+)
+Package biblatex Info: Trying to load bibliography style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.bbx' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\bbx\authoryear.bbx"
+File: authoryear.bbx 2014/06/25 v2.9a biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx"
+File: standard.bbx 2014/06/25 v2.9a biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count208
+\c@bbx:relatedtotal=\count209
+))
+Package biblatex Info: Trying to load citation style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.cbx' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\cbx\authoryear.cbx"
+File: authoryear.cbx 2014/06/25 v2.9a biblatex citation style (PK/JW/AB)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg"
+File: biblatex.cfg 
+)))
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count210
+\lst@gtempboxa=\box30
+\lst@token=\toks19
+\lst@length=\count211
+\lst@currlwidth=\dimen119
+\lst@column=\count212
+\lst@pos=\count213
+\lst@lostspace=\dimen120
+\lst@width=\dimen121
+\lst@newlines=\count214
+\lst@lineno=\count215
+\lst@maxwidth=\dimen122
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+\c@lstnumber=\count216
+\lst@skipnumbers=\count217
+\lst@framebox=\box31
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2014/09/06 1.5e listings configuration
+))
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\chngcntr\chngcntr.sty"
+Package: chngcntr 2009/09/02 v1.0a change counter resetting
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\appendix\appendix.sty"
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count218
+\c@@ppsavesec=\count219
+\c@@ppsaveapp=\count220
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\soul\soul.sty"
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks20
+\SOUL@lasttoken=\toks21
+\SOUL@cmds=\toks22
+\SOUL@buffer=\toks23
+\SOUL@token=\toks24
+\SOUL@spaceskip=\skip52
+\SOUL@ttwidth=\dimen123
+\SOUL@uldp=\dimen124
+\SOUL@ulht=\dimen125
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2014/04/30 v1.2b Input encoding file
+\inpenc@prehook=\toks25
+\inpenc@posthook=\toks26
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
+Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count221
+\calc@Bcount=\count222
+\calc@Adimen=\dimen126
+\calc@Bdimen=\dimen127
+\calc@Askip=\skip53
+\calc@Bskip=\skip54
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
+\calc@Ccount=\count223
+\calc@Cskip=\skip55
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
+File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box32
+\AM@toc@title=\toks27
+\c@AM@survey=\count224
+\AM@templatesizebox=\box33
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen128
+\extrarowheight=\dimen129
+\NC@list=\toks28
+\extratabsurround=\skip56
+\backup@length=\skip57
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\acro\acro.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty"
+Package: expl3 2015/03/01 v5547 L3 programming layer (loader) 
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3-code.tex"
+Package: expl3 2015/03/01 v5547 L3 programming layer (code) 
+L3 Module: l3bootstrap 2015/02/28 v5542 L3 Bootstrap code
+L3 Module: l3names 2015/02/24 v5535 L3 Namespace for primitives
+L3 Module: l3basics 2015/01/27 v5500 L3 Basic definitions
+L3 Module: l3expan 2014/11/27 v5472 L3 Argument expansion
+L3 Module: l3tl 2015/01/27 v5500 L3 Token lists
+L3 Module: l3str 2015/03/01 v5545 L3 Strings
+L3 Module: l3seq 2014/08/23 v5354 L3 Sequences and stacks
+L3 Module: l3int 2015/02/21 v5529 L3 Integers
+Normal \count register pool exhausted, switching to extended pool.
+\c_max_int=\count277
+\l_tmpa_int=\count278
+\l_tmpb_int=\count279
+\g_tmpa_int=\count280
+\g_tmpb_int=\count281
+L3 Module: l3quark 2014/08/23 v5354 L3 Quarks
+L3 Module: l3prg 2014/08/23 v5354 L3 Control structures
+\g__prg_map_int=\count282
+L3 Module: l3clist 2014/08/23 v5354 L3 Comma separated lists
+L3 Module: l3token 2014/09/15 v5422 L3 Experimental token manipulation
+L3 Module: l3prop 2014/08/23 v5354 L3 Property lists
+L3 Module: l3msg 2015/02/26 v5537 L3 Messages
+L3 Module: l3file 2014/08/24 v5369 L3 File and I/O operations
+\l_iow_line_count_int=\count283
+\l__iow_target_count_int=\count284
+\l__iow_current_line_int=\count285
+\l__iow_current_word_int=\count286
+\l__iow_current_indentation_int=\count287
+L3 Module: l3skip 2014/08/23 v5354 L3 Dimensions and skips
+\c_zero_dim=\dimen130
+\c_max_dim=\dimen131
+\l_tmpa_dim=\dimen132
+\l_tmpb_dim=\dimen133
+\g_tmpa_dim=\dimen134
+\g_tmpb_dim=\dimen135
+\c_zero_skip=\skip58
+\c_max_skip=\skip59
+\l_tmpa_skip=\skip60
+\l_tmpb_skip=\skip61
+\g_tmpa_skip=\skip62
+\g_tmpb_skip=\skip63
+\c_zero_muskip=\muskip11
+\c_max_muskip=\muskip12
+\l_tmpa_muskip=\muskip13
+\l_tmpb_muskip=\muskip14
+\g_tmpa_muskip=\muskip15
+\g_tmpb_muskip=\muskip16
+L3 Module: l3keys 2015/01/27 v5500 L3 Key-value interfaces
+\g__keyval_level_int=\count288
+\l_keys_choice_int=\count289
+L3 Module: l3fp 2014/08/22 v5336 L3 Floating points
+\c__fp_leading_shift_int=\count290
+\c__fp_middle_shift_int=\count291
+\c__fp_trailing_shift_int=\count292
+\c__fp_big_leading_shift_int=\count293
+\c__fp_big_middle_shift_int=\count294
+\c__fp_big_trailing_shift_int=\count295
+\c__fp_Bigg_leading_shift_int=\count296
+\c__fp_Bigg_middle_shift_int=\count297
+\c__fp_Bigg_trailing_shift_int=\count298
+L3 Module: l3box 2014/08/23 v5354 L3 Experimental boxes
+\c_empty_box=\box34
+\l_tmpa_box=\box35
+\l_tmpb_box=\box36
+\g_tmpa_box=\box37
+\g_tmpb_box=\box38
+L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
+\l__coffin_internal_box=\box39
+\l__coffin_internal_dim=\dimen136
+\l__coffin_offset_x_dim=\dimen137
+\l__coffin_offset_y_dim=\dimen138
+\l__coffin_x_dim=\dimen139
+\l__coffin_y_dim=\dimen140
+\l__coffin_x_prime_dim=\dimen141
+\l__coffin_y_prime_dim=\dimen142
+\c_empty_coffin=\box40
+\l__coffin_aligned_coffin=\box41
+\l__coffin_aligned_internal_coffin=\box42
+\l_tmpa_coffin=\box43
+\l_tmpb_coffin=\box44
+\l__coffin_display_coffin=\box45
+\l__coffin_display_coord_coffin=\box46
+\l__coffin_display_pole_coffin=\box47
+\l__coffin_display_offset_dim=\dimen143
+\l__coffin_display_x_dim=\dimen144
+\l__coffin_display_y_dim=\dimen145
+L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
+L3 Module: l3candidates 2015/03/01 v5544 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen146
+\l__box_bottom_dim=\dimen147
+\l__box_left_dim=\dimen148
+\l__box_right_dim=\dimen149
+\l__box_top_new_dim=\dimen150
+\l__box_bottom_new_dim=\dimen151
+\l__box_left_new_dim=\dimen152
+\l__box_right_new_dim=\dimen153
+\l__box_internal_box=\box48
+\l__coffin_bounding_shift_dim=\dimen154
+\l__coffin_left_corner_dim=\dimen155
+\l__coffin_right_corner_dim=\dimen156
+\l__coffin_bottom_corner_dim=\dimen157
+\l__coffin_top_corner_dim=\dimen158
+\l__coffin_scaled_total_height_dim=\dimen159
+\l__coffin_scaled_width_dim=\dimen160
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3unicode-data.def"
+File: l3unicode-data.def 2015/03/01 v5544 L3 Unicode data
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3pdfmode.def"
+File: l3pdfmode.def 2015/03/01 v5544 L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count299
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3experimental\l3sort\l3sort.sty"
+Package: l3sort 2014/11/25 v5471 L3 Experimental sorting functions
+\l__sort_length_int=\count300
+\l__sort_block_int=\count301
+\l__sort_begin_int=\count302
+\l__sort_end_int=\count303
+\l__sort_A_int=\count304
+\l__sort_B_int=\count305
+\l__sort_C_int=\count306
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3packages\xparse\xparse.sty"
+Package: xparse 2014/11/25 v5471 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count307
+\l__xparse_m_args_int=\count308
+\l__xparse_mandatory_args_int=\count309
+\l__xparse_processor_int=\count310
+\l__xparse_v_nesting_int=\count311
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3packages\l3keys2e\l3keys2e.sty"
+Package: l3keys2e 2014/11/25 v5471 LaTeX2e option processing using LaTeX3 keys
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3packages\xtemplate\xtemplate.sty"
+Package: xtemplate 2014/11/25 v5471 L3 Experimental prototype document function
+s
+\l__xtemplate_tmp_dim=\dimen161
+\l__xtemplate_tmp_int=\count312
+\l__xtemplate_tmp_muskip=\muskip17
+\l__xtemplate_tmp_skip=\skip64
+Variant \prop_get:NoNTF already defined; not changing it on line 106
+Variant \prop_get:NoNT already defined; not changing it on line 107
+Variant \prop_get:NoNF already defined; not changing it on line 108
+)
+Package: acro 2015/02/26 v1.6 Typeset Acronyms
+\l__acro_tmpa_int=\count313
+\l__acro_tmpb_int=\count314
+\l__acro_tmpc_int=\count315
+\l__acro_tmpd_int=\count316
+Variant \tl_put_right:NV already defined; not changing it on line 165
+Variant \seq_use:cnnn already defined; not changing it on line 168
+\l__acro_table_width_dim=\dimen162
+\l__acro_page_space_dim=\dimen163
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \acfirstupper with sig. 'm' on line 302.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \acsetup with sig. 'm' on line 415.
+.................................................
+.................................................
+. xtemplate info: "declare-object-type"
+. 
+. Declaring object type 'acro-first' taking 3 argument(s) on line 517.
+.................................................
+.................................................
+. xtemplate info: "declare-object-type"
+. 
+. Declaring object type 'acro-extra' taking 1 argument(s) on line 701.
+.................................................
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\zref-abspage.sty"
+Package: zref-abspage 2012/04/04 v2.24 Module abspage for zref (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\zref-base.sty"
+Package: zref-base 2012/04/04 v2.24 Module base for zref (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 759.
+Package zref Info: New property: default on input line 760.
+Package zref Info: New property: page on input line 761.
+)
+\c@abspage=\count317
+Package zref Info: New property: abspage on input line 62.
+)
+.................................................
+. xtemplate info: "declare-object-type"
+. 
+. Declaring object type 'acro-page-number' taking 1 argument(s) on line 901.
+.................................................
+.................................................
+. xtemplate info: "declare-object-type"
+. 
+. Declaring object type 'acro-title' taking 1 argument(s) on line 952.
+.................................................
+.................................................
+. xtemplate info: "declare-object-type"
+. 
+. Declaring object type 'acro-list' taking 3 argument(s) on line 990.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ac with sig. 'sm' on line 1880.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \iac with sig. 'sm' on line 1892.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Iac with sig. 'sm' on line 1904.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Ac with sig. 'sm' on line 1916.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \acp with sig. 'sm' on line 1928.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Acp with sig. 'sm' on line 1941.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \acs with sig. 'sm' on line 1953.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \iacs with sig. 'sm' on line 1965.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Iacs with sig. 'sm' on line 1977.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \acsp with sig. 'sm' on line 1989.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aca with sig. 'sm' on line 2001.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \iaca with sig. 'sm' on line 2013.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Iaca with sig. 'sm' on line 2025.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \acap with sig. 'sm' on line 2037.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \acl with sig. 'sm' on line 2049.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \iacl with sig. 'sm' on line 2061.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Iacl with sig. 'sm' on line 2073.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Acl with sig. 'sm' on line 2085.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aclp with sig. 'sm' on line 2097.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Aclp with sig. 'sm' on line 2110.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \acf with sig. 'sm' on line 2122.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \iacf with sig. 'sm' on line 2134.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Iacf with sig. 'sm' on line 2146.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Acf with sig. 'sm' on line 2158.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \acfp with sig. 'sm' on line 2170.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Acfp with sig. 'sm' on line 2183.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \acflike with sig. 'smm' on line 2195.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \iacflike with sig. 'smm' on line 2207.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \Iacflike with sig. 'smm' on line 2219.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \acfplike with sig. 'smm' on line 2231.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \acifused with sig. 'm' on line 2262.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \acresetall with sig. '' on line 2276.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \acuseall with sig. '' on line 2279.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \acreset with sig. '>{\SplitList {,}}m' on line 2282.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \acuse with sig. '>{\SplitList {,}}m' on line 2285.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareAcronym with sig. 'mm' on line 2682.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \printacronyms with sig. 'O{}' on line 2736.
+.................................................
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\translations\translations.sty"
+Package: translations 2014/01/23 v1.2a internationalization of LaTeX2e packages
+ (CN)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\cnltx\cnltx-base.sty"
+Package: cnltx-base 2015/01/11 v0.12 LaTeX tools and documenting facilities (CN
+)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgfopts\pgfopts.sty"
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks29
+\pgfkeys@temptoks=\toks30
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.te
+x"
+\pgfkeys@tmptoks=\toks31
+)))
+\pgfopts@list@add@a@toks=\toks32
+\pgfopts@list@add@b@toks=\toks33
+)
+\c@cnltx@tmpa=\count318
+\c@cnltx@tmpb=\count319
+\c@cnltx@tmpc=\count320
+\cnltx@tmpa@length=\skip65
+\cnltx@tmpb@length=\skip66
+\cnltx@tmpc@length=\skip67
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\trimspaces\trimspaces.sty"
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrlfile.sty"
+Package: scrlfile 2015/02/07 v3.16 KOMA-Script package (loading files)
+
+Package scrlfile, 2015/02/07 v3.16 KOMA-Script package (loading files)
+                  Copyright (C) Markus Kohm
+
+))) ("C:\Program Files\MiKTeX 2.9\tex\latex\makecell\makecell.sty"
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen164
+\c@nlinenum=\count321
+\TeXr@lab=\toks34
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
+Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
+\TX@col@width=\dimen165
+\TX@old@table=\dimen166
+\TX@old@col=\dimen167
+\TX@target=\dimen168
+\TX@delta=\dimen169
+\TX@cols=\count322
+\TX@ftn=\toks35
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\units\nicefrac.sty"
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip68
+\L@UnitsRaiseTextstyle=\skip69
+\L@UnitsRaiseScriptstyle=\skip70
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx"
+File: english.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
+)
+\@quotelevel=\count323
+\@quotereset=\count324
+
+
+Package biblatex Warning: Conflicting options.
+(biblatex)                'firstinits' conflicts with 'uniquename=full'.
+(biblatex)                Setting 'uniquename=init' on input line 111.
+
+Package translations Info: No language package found. I am going to use `englis
+h' as default language. on input line 111.
+(RalangEvaluation.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count325
+\scratchdimen=\dimen170
+\scratchbox=\box49
+\nofMPsegments=\count326
+\nofMParguments=\count327
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count328
+\MPscratchDim=\dimen171
+\MPnumerator=\count329
+\makeMPintoPDFobject=\count330
+\everyMPtoPDFconversion=\toks37
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\ms\ragged2e.sty"
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ms\everysel.sty"
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 126.
+)
+\CenteringLeftskip=\skip71
+\RaggedLeftLeftskip=\skip72
+\RaggedRightLeftskip=\skip73
+\CenteringRightskip=\skip74
+\RaggedLeftRightskip=\skip75
+\RaggedRightRightskip=\skip76
+\CenteringParfillskip=\skip77
+\RaggedLeftParfillskip=\skip78
+\RaggedRightParfillskip=\skip79
+\JustifyingParfillskip=\skip80
+\CenteringParindent=\skip81
+\RaggedLeftParindent=\skip82
+\RaggedRightParindent=\skip83
+\JustifyingParindent=\skip84
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(90.3375pt, 416.83289pt, 90.3375pt)
+* v-part:(T,H,B)=(90.3375pt, 664.37186pt, 90.3375pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=416.83289pt
+* \textheight=664.37186pt
+* \oddsidemargin=18.0675pt
+* \evensidemargin=18.0675pt
+* \topmargin=-18.9325pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+
+Package biblatex Warning: Data encoding is 'utf8'.
+(biblatex)                Use backend=biber.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'RalangEvaluation.bbl' found.
+(RalangEvaluation.bbl
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'KrpanBilobrk2011':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'VihavainenAiraksinenWatson2014':
+(biblatex)                - Can't use 'location' + 'address'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'WatsonLi2014':
+(biblatex)                - Can't use 'location' + 'address'.
+
+)
+Package biblatex Info: Reference section=0 on input line 111.
+Package biblatex Info: Reference segment=0 on input line 111.
+\c@lstlisting=\count331
+\AtBeginShipoutBox=\box50
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\translations\translations-basic-diction
+ary-english.trsl"
+File: translations-basic-dictionary-english.trsl (english translation file `tra
+nslations-basic-dictionary')
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 123.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 123.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 123.
+ [1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(RalangEvaluation.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 11.
+)
+\tf@toc=\write4
+ [2] (RalangEvaluation.lot)
+\tf@lot=\write5
+ (RalangEvaluation.lof
+[3])
+\tf@lof=\write6
+ (RalangEvaluation.lol)
+\tf@lol=\write7
+ [4]
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+
+ []
+
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
+
+ []
+
+<images/survey_results_1.png, id=28, 362.3136pt x 217.7736pt>
+File: images/survey_results_1.png Graphic file (type png)
+
+<use images/survey_results_1.png>
+Package pdftex.def Info: images/survey_results_1.png used on input line 170.
+(pdftex.def)             Requested size: 375.14705pt x 225.48563pt.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 176.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 176.
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
+
+ []
+
+<images/unit_test_results.png, id=29, 659.46375pt x 248.42813pt>
+File: images/unit_test_results.png Graphic file (type png)
+
+<use images/unit_test_results.png>
+Package pdftex.def Info: images/unit_test_results.png used on input line 186.
+(pdftex.def)             Requested size: 416.83289pt x 157.02988pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+
+ []
+
+[3 <./images/survey_results_1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+ []
+
+[4 <./images/unit_test_results.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+
+ []
+
+<images/test_driven_development.png, id=39, 642.7212pt x 428.3202pt>
+File: images/test_driven_development.png Graphic file (type png)
+
+<use images/test_driven_development.png>
+Package pdftex.def Info: images/test_driven_development.png used on input line 
+204.
+(pdftex.def)             Requested size: 291.78174pt x 194.4481pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
+
+ []
+
+[5 <./images/test_driven_development.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
+
+ []
+
+<images/development_environment.png, id=45, 1028.34187pt x 548.0475pt>
+File: images/development_environment.png Graphic file (type png)
+
+<use images/development_environment.png>
+Package pdftex.def Info: images/development_environment.png used on input line 
+230.
+(pdftex.def)             Requested size: 416.83289pt x 222.15036pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+
+ []
+
+[6 <./images/development_environment.png>] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
+
+ []
+
+[8]
+<images/evaluating_research_questionnaire.png, id=56, 507.8172pt x 304.4976pt>
+File: images/evaluating_research_questionnaire.png Graphic file (type png)
+
+<use images/evaluating_research_questionnaire.png>
+Package pdftex.def Info: images/evaluating_research_questionnaire.png used on i
+nput line 263.
+(pdftex.def)             Requested size: 333.46758pt x 199.9515pt.
+ [9 <./images/evaluating_research_questionnaire.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
+
+ []
+
+<images/factorial_bytecode_sample.png, id=62, 511.15968pt x 236.38312pt>
+File: images/factorial_bytecode_sample.png Graphic file (type png)
+
+<use images/factorial_bytecode_sample.png>
+Package pdftex.def Info: images/factorial_bytecode_sample.png used on input lin
+e 276.
+(pdftex.def)             Requested size: 416.83289pt x 192.76054pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+
+ []
+
+[10 <./images/factorial_bytecode_sample.png>]
+<images/stack_overflow_sample.png, id=66, 642.90187pt x 170.13562pt>
+File: images/stack_overflow_sample.png Graphic file (type png)
+
+<use images/stack_overflow_sample.png>
+Package pdftex.def Info: images/stack_overflow_sample.png used on input line 29
+1.
+(pdftex.def)             Requested size: 416.83289pt x 110.31165pt.
+
+Overfull \hbox (21.37987pt too wide) in paragraph at lines 298--299
+[]\OT1/cmr/m/n/10 Use \OT1/cmr/bx/it/10 java.lang.Integer \OT1/cmr/bx/n/10 by d
+e-fault\OT1/cmr/m/n/10 , and au-to-mat-i-cally change the data type to a \OT1/c
+mr/m/it/10 java.lang.Long
+ []
+
+[11 <./images/stack_overflow_sample.png>]
+<images/int_stack_overflow.png, id=71, 442.65375pt x 133.24782pt>
+File: images/int_stack_overflow.png Graphic file (type png)
+
+<use images/int_stack_overflow.png>
+Package pdftex.def Info: images/int_stack_overflow.png used on input line 317.
+(pdftex.def)             Requested size: 416.83289pt x 125.4827pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--347
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
+
+ []
+
+[12 <./images/int_stack_overflow.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 364--365
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 366--367
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 374--375
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 380--381
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--385
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--389
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--393
+
+ []
+
+[15]
+Overfull \hbox (8.22296pt too wide) in paragraph at lines 397--397
+\OT1/cmr/m/it/10 Ruby, and Clo-jure? \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : $\OT
+1/cmtt/m/n/10 https : / / www . quora . com / Why -[] is -[] tail -[] recursion
+ -[] optimisation -[]$
+ []
+
+[16] (core.clj
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
+) (gen.clj [17] [18]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 90.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <8> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 90.
+ [19] [20])
+(core_spec.clj [21] [22] [23] [24] [25] [26]) (parser.bnf [27]) [28]
+(testcases/callhello.ra) (testcases/compare.ra) (testcases/complex.ra)
+(testcases/factorial.ra) (testcases/funccall.ra) (testcases/helloworld.ra
+[29]) (testcases/legal.ra) (testcases/mulcomp.ra) (testcases/mulfuncs.ra)
+[30] (testcases/mulhello.ra) (testcases/multimaths.ra) (testcases/mulvars.ra)
+(testcases/notcompare.ra) (testcases/printnum.ra) (testcases/subtwo.ra)
+(testcases/vars.ra) (testcases/varstring.ra [31])
+<images/ubuntu_callhello.png, id=142, 1026.83624pt x 384.43625pt>
+File: images/ubuntu_callhello.png Graphic file (type png)
+
+<use images/ubuntu_callhello.png>
+Package pdftex.def Info: images/ubuntu_callhello.png used on input line 437.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+<images/ubuntu_compare.png, id=143, 1026.83624pt x 384.43625pt>
+File: images/ubuntu_compare.png Graphic file (type png)
+
+<use images/ubuntu_compare.png>
+Package pdftex.def Info: images/ubuntu_compare.png used on input line 443.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+<images/ubuntu_complex.png, id=144, 1026.83624pt x 384.43625pt>
+File: images/ubuntu_complex.png Graphic file (type png)
+
+<use images/ubuntu_complex.png>
+Package pdftex.def Info: images/ubuntu_complex.png used on input line 449.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[32 <./images/ubuntu_callhello.png (PNG copy)> <./images/ubuntu_compare.png (PN
+G copy)>] <images/ubuntu_factorial.png, id=148, 1026.83624pt x 384.43625pt>
+File: images/ubuntu_factorial.png Graphic file (type png)
+
+<use images/ubuntu_factorial.png>
+Package pdftex.def Info: images/ubuntu_factorial.png used on input line 456.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+<images/ubuntu_funccall.png, id=149, 1026.83624pt x 384.43625pt>
+File: images/ubuntu_funccall.png Graphic file (type png)
+
+<use images/ubuntu_funccall.png>
+Package pdftex.def Info: images/ubuntu_funccall.png used on input line 462.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+<images/ubuntu_helloworld.png, id=150, 1026.83624pt x 384.43625pt>
+File: images/ubuntu_helloworld.png Graphic file (type png)
+
+<use images/ubuntu_helloworld.png>
+Package pdftex.def Info: images/ubuntu_helloworld.png used on input line 468.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[33 <./images/ubuntu_complex.png (PNG copy)> <./images/ubuntu_factorial.png (PN
+G copy)> <./images/ubuntu_funccall.png (PNG copy)>]
+<images/ubuntu_legal.png, id=155, 1026.83624pt x 384.43625pt>
+File: images/ubuntu_legal.png Graphic file (type png)
+
+<use images/ubuntu_legal.png>
+Package pdftex.def Info: images/ubuntu_legal.png used on input line 475.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+<images/ubuntu_mulcomp.png, id=156, 1026.83624pt x 384.43625pt>
+File: images/ubuntu_mulcomp.png Graphic file (type png)
+
+<use images/ubuntu_mulcomp.png>
+Package pdftex.def Info: images/ubuntu_mulcomp.png used on input line 481.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+<images/ubuntu_mulfuncs.png, id=157, 1026.83624pt x 384.43625pt>
+File: images/ubuntu_mulfuncs.png Graphic file (type png)
+
+<use images/ubuntu_mulfuncs.png>
+Package pdftex.def Info: images/ubuntu_mulfuncs.png used on input line 487.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[34 <./images/ubuntu_helloworld.png (PNG copy)> <./images/ubuntu_legal.png (PNG
+ copy)> <./images/ubuntu_mulcomp.png (PNG copy)>]
+<images/ubuntu_mulhello.png, id=161, 1026.83624pt x 384.43625pt>
+File: images/ubuntu_mulhello.png Graphic file (type png)
+
+<use images/ubuntu_mulhello.png>
+Package pdftex.def Info: images/ubuntu_mulhello.png used on input line 494.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+<images/ubuntu_multimaths.png, id=162, 1026.83624pt x 384.43625pt>
+File: images/ubuntu_multimaths.png Graphic file (type png)
+
+<use images/ubuntu_multimaths.png>
+Package pdftex.def Info: images/ubuntu_multimaths.png used on input line 500.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+<images/ubuntu_mulvars.png, id=163, 1026.83624pt x 384.43625pt>
+File: images/ubuntu_mulvars.png Graphic file (type png)
+
+<use images/ubuntu_mulvars.png>
+Package pdftex.def Info: images/ubuntu_mulvars.png used on input line 506.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[35 <./images/ubuntu_mulfuncs.png (PNG copy)> <./images/ubuntu_mulhello.png (PN
+G copy)> <./images/ubuntu_multimaths.png (PNG copy)>]
+<images/ubuntu_notcompare.png, id=167, 1026.83624pt x 384.43625pt>
+File: images/ubuntu_notcompare.png Graphic file (type png)
+
+<use images/ubuntu_notcompare.png>
+Package pdftex.def Info: images/ubuntu_notcompare.png used on input line 513.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+<images/ubuntu_printnum.png, id=168, 1026.83624pt x 384.43625pt>
+File: images/ubuntu_printnum.png Graphic file (type png)
+
+<use images/ubuntu_printnum.png>
+Package pdftex.def Info: images/ubuntu_printnum.png used on input line 519.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+<images/ubuntu_subtwo.png, id=169, 1026.83624pt x 384.43625pt>
+File: images/ubuntu_subtwo.png Graphic file (type png)
+
+<use images/ubuntu_subtwo.png>
+Package pdftex.def Info: images/ubuntu_subtwo.png used on input line 525.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[36 <./images/ubuntu_mulvars.png (PNG copy)> <./images/ubuntu_notcompare.png (P
+NG copy)> <./images/ubuntu_printnum.png (PNG copy)>]
+<images/ubuntu_vars.png, id=173, 1026.83624pt x 384.43625pt>
+File: images/ubuntu_vars.png Graphic file (type png)
+
+<use images/ubuntu_vars.png>
+Package pdftex.def Info: images/ubuntu_vars.png used on input line 532.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+<images/ubuntu_varstring.png, id=174, 1026.83624pt x 384.43625pt>
+File: images/ubuntu_varstring.png Graphic file (type png)
+
+<use images/ubuntu_varstring.png>
+Package pdftex.def Info: images/ubuntu_varstring.png used on input line 538.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+ [37 <./images/ubuntu_subtwo.png (PNG copy)> <./images/ubuntu_vars.png (PNG cop
+y)> <./images/ubuntu_varstring.png (PNG copy)>] <images/windows_callhello.png, 
+id=178, 1026.83624pt x 384.43625pt>
+File: images/windows_callhello.png Graphic file (type png)
+
+<use images/windows_callhello.png>
+Package pdftex.def Info: images/windows_callhello.png used on input line 546.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+<images/windows_compare.png, id=179, 1026.83624pt x 384.43625pt>
+File: images/windows_compare.png Graphic file (type png)
+
+<use images/windows_compare.png>
+Package pdftex.def Info: images/windows_compare.png used on input line 552.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+<images/windows_complex.png, id=180, 1026.83624pt x 384.43625pt>
+File: images/windows_complex.png Graphic file (type png)
+
+<use images/windows_complex.png>
+Package pdftex.def Info: images/windows_complex.png used on input line 558.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+ [38 <./images/windows_callhello.png (PNG copy)> <./images/windows_compare.png 
+(PNG copy)> <./images/windows_complex.png (PNG copy)>] <images/windows_factoria
+l.png, id=184, 1026.83624pt x 384.43625pt>
+File: images/windows_factorial.png Graphic file (type png)
+
+<use images/windows_factorial.png>
+Package pdftex.def Info: images/windows_factorial.png used on input line 565.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+<images/windows_funccall.png, id=185, 1026.83624pt x 384.43625pt>
+File: images/windows_funccall.png Graphic file (type png)
+
+<use images/windows_funccall.png>
+Package pdftex.def Info: images/windows_funccall.png used on input line 571.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+<images/windows_helloworld.png, id=186, 1026.83624pt x 384.43625pt>
+File: images/windows_helloworld.png Graphic file (type png)
+
+<use images/windows_helloworld.png>
+Package pdftex.def Info: images/windows_helloworld.png used on input line 577.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+ [39 <./images/windows_factorial.png (PNG copy)> <./images/windows_funccall.png
+ (PNG copy)> <./images/windows_helloworld.png (PNG copy)>] <images/windows_lega
+l.png, id=191, 1026.83624pt x 384.43625pt>
+File: images/windows_legal.png Graphic file (type png)
+
+<use images/windows_legal.png>
+Package pdftex.def Info: images/windows_legal.png used on input line 584.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+<images/windows_mulcomp.png, id=192, 1026.83624pt x 384.43625pt>
+File: images/windows_mulcomp.png Graphic file (type png)
+
+<use images/windows_mulcomp.png>
+Package pdftex.def Info: images/windows_mulcomp.png used on input line 590.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+<images/windows_mulfuncs.png, id=193, 1026.83624pt x 384.43625pt>
+File: images/windows_mulfuncs.png Graphic file (type png)
+
+<use images/windows_mulfuncs.png>
+Package pdftex.def Info: images/windows_mulfuncs.png used on input line 596.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+ [40 <./images/windows_legal.png (PNG copy)> <./images/windows_mulcomp.png (PNG
+ copy)> <./images/windows_mulfuncs.png (PNG copy)>] <images/windows_mulhello.pn
+g, id=197, 1026.83624pt x 384.43625pt>
+File: images/windows_mulhello.png Graphic file (type png)
+
+<use images/windows_mulhello.png>
+Package pdftex.def Info: images/windows_mulhello.png used on input line 603.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+<images/windows_multimaths.png, id=198, 1026.83624pt x 384.43625pt>
+File: images/windows_multimaths.png Graphic file (type png)
+
+<use images/windows_multimaths.png>
+Package pdftex.def Info: images/windows_multimaths.png used on input line 609.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+<images/windows_mulvars.png, id=199, 1026.83624pt x 384.43625pt>
+File: images/windows_mulvars.png Graphic file (type png)
+
+<use images/windows_mulvars.png>
+Package pdftex.def Info: images/windows_mulvars.png used on input line 615.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+ [41 <./images/windows_mulhello.png (PNG copy)> <./images/windows_multimaths.pn
+g (PNG copy)> <./images/windows_mulvars.png (PNG copy)>] <images/windows_notcom
+pare.png, id=203, 1026.83624pt x 384.43625pt>
+File: images/windows_notcompare.png Graphic file (type png)
+
+<use images/windows_notcompare.png>
+Package pdftex.def Info: images/windows_notcompare.png used on input line 622.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+<images/windows_printnum.png, id=204, 1026.83624pt x 384.43625pt>
+File: images/windows_printnum.png Graphic file (type png)
+
+<use images/windows_printnum.png>
+Package pdftex.def Info: images/windows_printnum.png used on input line 628.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+<images/windows_subtwo.png, id=205, 1026.83624pt x 384.43625pt>
+File: images/windows_subtwo.png Graphic file (type png)
+
+<use images/windows_subtwo.png>
+Package pdftex.def Info: images/windows_subtwo.png used on input line 634.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+ [42 <./images/windows_notcompare.png (PNG copy)> <./images/windows_printnum.pn
+g (PNG copy)> <./images/windows_subtwo.png (PNG copy)>] <images/windows_vars.pn
+g, id=209, 1026.83624pt x 384.43625pt>
+File: images/windows_vars.png Graphic file (type png)
+
+<use images/windows_vars.png>
+Package pdftex.def Info: images/windows_vars.png used on input line 641.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+
+<images/windows_varstring.png, id=210, 1026.83624pt x 384.43625pt>
+File: images/windows_varstring.png Graphic file (type png)
+
+<use images/windows_varstring.png>
+Package pdftex.def Info: images/windows_varstring.png used on input line 647.
+(pdftex.def)             Requested size: 416.83289pt x 156.05951pt.
+ [43 <./images/windows_vars.png (PNG copy)> <./images/windows_varstring.png (PN
+G copy)>]
+<images/java_import_ralang.png, id=214, 796.47563pt x 240.14719pt>
+File: images/java_import_ralang.png Graphic file (type png)
+
+<use images/java_import_ralang.png>
+Package pdftex.def Info: images/java_import_ralang.png used on input line 656.
+(pdftex.def)             Requested size: 416.83289pt x 125.67973pt.
+
+<images/test_java_ralang.png, id=215, 465.99094pt x 233.37187pt>
+File: images/test_java_ralang.png Graphic file (type png)
+
+<use images/test_java_ralang.png>
+Package pdftex.def Info: images/test_java_ralang.png used on input line 662.
+(pdftex.def)             Requested size: 416.83289pt x 208.76147pt.
+ [44 <./images/java_import_ralang.png> <./images/test_java_ralang.png>]
+<images/DesignAndImplementation.jpg, id=219, 840.13875pt x 311.1625pt>
+File: images/DesignAndImplementation.jpg Graphic file (type jpg)
+
+<use images/DesignAndImplementation.jpg>
+Package pdftex.def Info: images/DesignAndImplementation.jpg used on input line 
+671.
+(pdftex.def)             Requested size: 395.98996pt x 146.66422pt.
+ [45 <./images/DesignAndImplementation.jpg>] [46]
+Underfull \hbox (badness 10000) in paragraph at lines 697--698
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 702--703
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 704--705
+
+ []
+
+<images/NonPassingStudents.png, id=227, 353.82187pt x 231.11343pt>
+File: images/NonPassingStudents.png Graphic file (type png)
+
+<use images/NonPassingStudents.png>
+Package pdftex.def Info: images/NonPassingStudents.png used on input line 709.
+(pdftex.def)             Requested size: 200.078pt x 130.69217pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 715--716
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 717--718
+
+ []
+
+[47 <./images/NonPassingStudents.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 719--720
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 721--722
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 726--727
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 728--729
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 730--731
+
+ []
+
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 738--739
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 740--741
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--743
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 744--745
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 746--747
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 752--753
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 754--755
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 756--757
+
+ []
+
+[49] <ResearchQuestionnaire1.pdf, id=237, 597.55246pt x 845.07718pt>
+File: ResearchQuestionnaire1.pdf Graphic file (type pdf)
+
+<use ResearchQuestionnaire1.pdf>
+Package pdftex.def Info: ResearchQuestionnaire1.pdf used on input line 764.
+(pdftex.def)             Requested size: 416.83289pt x 589.51262pt.
+ [50 <./ResearchQuestionnaire1.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./ResearchQuestionnaire2.pdf): PDF inclusion
+: found PDF version <1.7>, but at most version <1.5> allowed
+<ResearchQuestionnaire2.pdf, id=266, 597.55246pt x 845.07724pt>
+File: ResearchQuestionnaire2.pdf Graphic file (type pdf)
+
+<use ResearchQuestionnaire2.pdf>
+Package pdftex.def Info: ResearchQuestionnaire2.pdf used on input line 770.
+(pdftex.def)             Requested size: 416.83289pt x 589.51266pt.
+ [51 <./ResearchQuestionnaire2.pdf>]
+<images/scan1.jpg, id=304, 1266.7325pt x 1560.83125pt>
+File: images/scan1.jpg Graphic file (type jpg)
+ <use images/scan1.jpg>
+Package pdftex.def Info: images/scan1.jpg used on input line 777.
+(pdftex.def)             Requested size: 416.83289pt x 513.5993pt.
+
+[52 <./images/scan1.jpg>] <images/scan2.jpg, id=308, 1309.89375pt x 1421.31pt>
+File: images/scan2.jpg Graphic file (type jpg)
+
+<use images/scan2.jpg>
+Package pdftex.def Info: images/scan2.jpg used on input line 783.
+(pdftex.def)             Requested size: 416.83289pt x 452.29108pt.
+ [53 <./images/scan2.jpg>]
+<images/scan3.jpg, id=312, 1281.78876pt x 1402.23875pt>
+File: images/scan3.jpg Graphic file (type jpg)
+ <use images/scan3.jpg>
+Package pdftex.def Info: images/scan3.jpg used on input line 789.
+(pdftex.def)             Requested size: 416.83289pt x 456.00035pt.
+
+[54 <./images/scan3.jpg>]
+<images/scan4.jpg, id=316, 1281.78876pt x 1327.96124pt>
+File: images/scan4.jpg Graphic file (type jpg)
+ <use images/scan4.jpg>
+Package pdftex.def Info: images/scan4.jpg used on input line 795.
+(pdftex.def)             Requested size: 416.83289pt x 431.84572pt.
+
+[55 <./images/scan4.jpg>]
+<images/scan5.jpg, id=320, 1270.7475pt x 1400.23125pt>
+File: images/scan5.jpg Graphic file (type jpg)
+ <use images/scan5.jpg>
+Package pdftex.def Info: images/scan5.jpg used on input line 801.
+(pdftex.def)             Requested size: 416.83289pt x 459.30019pt.
+
+[56 <./images/scan5.jpg>]
+<images/scan6.jpg, id=324, 1270.7475pt x 1360.08125pt>
+File: images/scan6.jpg Graphic file (type jpg)
+ <use images/scan6.jpg>
+Package pdftex.def Info: images/scan6.jpg used on input line 807.
+(pdftex.def)             Requested size: 416.83289pt x 446.1303pt.
+
+[57 <./images/scan6.jpg>] <images/scan7.jpg, id=329, 1271.75125pt x 1405.25pt>
+File: images/scan7.jpg Graphic file (type jpg)
+
+<use images/scan7.jpg>
+Package pdftex.def Info: images/scan7.jpg used on input line 813.
+(pdftex.def)             Requested size: 416.83289pt x 460.58191pt.
+ [58 <./images/scan7.jpg>]
+<images/scan8.jpg, id=333, 1268.74pt x 1402.23875pt>
+File: images/scan8.jpg Graphic file (type jpg)
+ <use images/scan8.jpg>
+Package pdftex.def Info: images/scan8.jpg used on input line 819.
+(pdftex.def)             Requested size: 416.83289pt x 460.68617pt.
+
+[59 <./images/scan8.jpg>]
+<images/scan9.jpg, id=337, 1271.75125pt x 1402.23875pt>
+File: images/scan9.jpg Graphic file (type jpg)
+ <use images/scan9.jpg>
+Package pdftex.def Info: images/scan9.jpg used on input line 825.
+(pdftex.def)             Requested size: 416.83289pt x 459.59496pt.
+
+[60 <./images/scan9.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 832--840
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 844--852
+
+ []
+
+[61]
+<presentation/RalangPresentationSlides.pdf, id=344, page=1, 963.6pt x 542.025pt
+>
+File: presentation/RalangPresentationSlides.pdf Graphic file (type pdf)
+ <use presentation/RalangPresentationSlides.pdf, page 1>
+Package pdftex.def Info: presentation/RalangPresentationSlides.pdf, page1 used 
+on input line 861.
+(pdftex.def)             Requested size: 416.83289pt x 234.46393pt.
+
+<presentation/RalangPresentationSlides.pdf, id=345, page=2, 963.6pt x 542.025pt
+>
+File: presentation/RalangPresentationSlides.pdf Graphic file (type pdf)
+ <use presentation/RalangPresentationSlides.pdf, page 2>
+Package pdftex.def Info: presentation/RalangPresentationSlides.pdf, page2 used 
+on input line 866.
+(pdftex.def)             Requested size: 416.83289pt x 234.46393pt.
+ [62 <./presentation/RalangPresentationSlides.pdf> <./presentation/RalangPresen
+tationSlides.pdf
+
+pdfTeX warning: pdflatex.exe (file ./presentation/RalangPresentationSlides.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<presentation/RalangPresentationSlides.pdf, id=583, page=3, 963.6pt x 542.025pt
+>
+File: presentation/RalangPresentationSlides.pdf Graphic file (type pdf)
+ <use presentation/RalangPresentationSlides.pdf, page 3>
+Package pdftex.def Info: presentation/RalangPresentationSlides.pdf, page3 used 
+on input line 872.
+(pdftex.def)             Requested size: 416.83289pt x 234.46393pt.
+
+<presentation/RalangPresentationSlides.pdf, id=584, page=4, 963.6pt x 542.025pt
+>
+File: presentation/RalangPresentationSlides.pdf Graphic file (type pdf)
+ <use presentation/RalangPresentationSlides.pdf, page 4>
+Package pdftex.def Info: presentation/RalangPresentationSlides.pdf, page4 used 
+on input line 877.
+(pdftex.def)             Requested size: 416.83289pt x 234.46393pt.
+ [63 <./presentation/RalangPresentationSlides.pdf> <./presentation/RalangPresen
+tationSlides.pdf
+
+pdfTeX warning: pdflatex.exe (file ./presentation/RalangPresentationSlides.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<presentation/RalangPresentationSlides.pdf, id=843, page=5, 963.6pt x 542.025pt
+>
+File: presentation/RalangPresentationSlides.pdf Graphic file (type pdf)
+ <use presentation/RalangPresentationSlides.pdf, page 5>
+Package pdftex.def Info: presentation/RalangPresentationSlides.pdf, page5 used 
+on input line 883.
+(pdftex.def)             Requested size: 416.83289pt x 234.46393pt.
+
+<presentation/RalangPresentationSlides.pdf, id=844, page=6, 963.6pt x 542.025pt
+>
+File: presentation/RalangPresentationSlides.pdf Graphic file (type pdf)
+ <use presentation/RalangPresentationSlides.pdf, page 6>
+Package pdftex.def Info: presentation/RalangPresentationSlides.pdf, page6 used 
+on input line 888.
+(pdftex.def)             Requested size: 416.83289pt x 234.46393pt.
+ [64 <./presentation/RalangPresentationSlides.pdf> <./presentation/RalangPresen
+tationSlides.pdf
+
+pdfTeX warning: pdflatex.exe (file ./presentation/RalangPresentationSlides.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<presentation/RalangPresentationSlides.pdf, id=1094, page=7, 963.6pt x 542.025p
+t>
+File: presentation/RalangPresentationSlides.pdf Graphic file (type pdf)
+ <use presentation/RalangPresentationSlides.pdf, page 7>
+Package pdftex.def Info: presentation/RalangPresentationSlides.pdf, page7 used 
+on input line 894.
+(pdftex.def)             Requested size: 416.83289pt x 234.46393pt.
+
+<presentation/RalangPresentationSlides.pdf, id=1095, page=8, 963.6pt x 542.025p
+t>
+File: presentation/RalangPresentationSlides.pdf Graphic file (type pdf)
+ <use presentation/RalangPresentationSlides.pdf, page 8>
+Package pdftex.def Info: presentation/RalangPresentationSlides.pdf, page8 used 
+on input line 899.
+(pdftex.def)             Requested size: 416.83289pt x 234.46393pt.
+ [65 <./presentation/RalangPresentationSlides.pdf> <./presentation/RalangPresen
+tationSlides.pdf
+
+pdfTeX warning: pdflatex.exe (file ./presentation/RalangPresentationSlides.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<presentation/RalangPresentationSlides.pdf, id=1352, page=9, 963.6pt x 542.025p
+t>
+File: presentation/RalangPresentationSlides.pdf Graphic file (type pdf)
+ <use presentation/RalangPresentationSlides.pdf, page 9>
+Package pdftex.def Info: presentation/RalangPresentationSlides.pdf, page9 used 
+on input line 905.
+(pdftex.def)             Requested size: 416.83289pt x 234.46393pt.
+
+<presentation/RalangPresentationSlides.pdf, id=1353, page=10, 963.6pt x 542.025
+pt>
+File: presentation/RalangPresentationSlides.pdf Graphic file (type pdf)
+ <use presentation/RalangPresentationSlides.pdf, page 10>
+Package pdftex.def Info: presentation/RalangPresentationSlides.pdf, page10 used
+ on input line 910.
+(pdftex.def)             Requested size: 416.83289pt x 234.46393pt.
+ [66 <./presentation/RalangPresentationSlides.pdf> <./presentation/RalangPresen
+tationSlides.pdf
+
+pdfTeX warning: pdflatex.exe (file ./presentation/RalangPresentationSlides.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+>] <presentation/Handout.pdf, id=1598, 597.55246pt x 845.07718pt>
+File: presentation/Handout.pdf Graphic file (type pdf)
+
+<use presentation/Handout.pdf>
+Package pdftex.def Info: presentation/Handout.pdf used on input line 917.
+(pdftex.def)             Requested size: 416.83289pt x 589.51262pt.
+ [67 <./presentation/Handout.pdf>]
+(RalangEvaluation.aux)
+Package logreq Info: Writing requests to 'RalangEvaluation.run.xml'.
+ ) 
+Here is how much of TeX's memory you used:
+ 20646 strings out of 493698
+ 380923 string characters out of 3144409
+ 1113608 words of memory out of 3000000
+ 23596 multiletter control sequences out of 15000+200000
+ 10764 words of font info for 38 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 61i,20n,66p,10374b,1692s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12
+.pfb>
+Output written on RalangEvaluation.pdf (71 pages, 11886120 bytes).
+PDF statistics:
+ 1711 PDF objects out of 1728 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 341 words of extra memory for PDF output out of 10000 (max. 10000000)
+

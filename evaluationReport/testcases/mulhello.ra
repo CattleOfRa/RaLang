@@ -1,0 +1,5 @@
+module mulhello
+
+function main([String] args) -> Void:
+    print "Multi line hello world!"
+    print "Hi there."

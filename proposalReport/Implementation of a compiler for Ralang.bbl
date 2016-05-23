@@ -1,0 +1,372 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.4 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{AhoLamSethiUllman2006}{book}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Aho}{A.}%
+     {Alfred~V.}{A.~V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lam}{L.}%
+     {Monica~S.}{M.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sethi}{S.}%
+     {Ravi}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ullman}{U.}%
+     {Jeffrey~D.}{J.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Addison-Wesley Longman Publishing Co., Inc.}%
+  }
+  \strng{namehash}{AAV+1}
+  \strng{fullhash}{AAVLMSSRUJD1}
+  \field{labelyear}{2006}
+  \field{sortinit}{A}
+  \field{isbn}{0321486811}
+  \field{title}{Compilers: Principles, Techniques, and Tools (2Nd Edition)}
+  \list{location}{1}{%
+    {Boston, MA, USA}%
+  }
+  \field{year}{2006}
+\endentry
+
+\entry{ChakravartyKeller2004}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Chakravarty}{C.}%
+     {MANUEL M.~T.}{M.~M.~T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Keller}{K.}%
+     {GABRIELE}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CMMTKG1}
+  \strng{fullhash}{CMMTKG1}
+  \field{labelyear}{2004}
+  \field{sortinit}{C}
+  \verb{doi}
+  \verb 10.1017/S0956796803004805
+  \endverb
+  \field{issn}{1469-7653}
+  \field{issue}{01}
+  \field{pages}{113\bibrangedash 123}
+  \field{title}{The risks and benefits of teaching purely functional
+  programming in first year}
+  \verb{url}
+  \verb http://journals.cambridge.org/article_S0956796803004805
+  \endverb
+  \field{volume}{14}
+  \field{journaltitle}{Journal of Functional Programming}
+  \field{year}{2004}
+\endentry
+
+\entry{Daly2011}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Daly}{D.}%
+     {Tebring}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Consortium for Computing Sciences in Colleges}%
+  }
+  \strng{namehash}{DT1}
+  \strng{fullhash}{DT1}
+  \field{labelyear}{2011}
+  \field{sortinit}{D}
+  \field{issn}{1937-4771}
+  \field{number}{5}
+  \field{pages}{23\bibrangedash 30}
+  \field{title}{Minimizing to Maximize: An Initial Attempt at Teaching
+  Introductory Programming Using Alice}
+  \verb{url}
+  \verb http://ezproxy.bcu.ac.uk:2132/citation.cfm?id=1961574.1961578
+  \endverb
+  \field{volume}{26}
+  \list{location}{1}{%
+    {USA}%
+  }
+  \field{journaltitle}{J. Comput. Sci. Coll.}
+  \field{month}{05}
+  \field{year}{2011}
+\endentry
+
+\entry{JayalLauriaTuckerSwift2011}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Jayal}{J.}%
+     {Ambikesh}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lauria}{L.}%
+     {Stasha}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tucker}{T.}%
+     {Allan}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Swift}{S.}%
+     {Stephen}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Taylor \& Francis}%
+  }
+  \strng{namehash}{JA+1}
+  \strng{fullhash}{JALSTASS1}
+  \field{labelyear}{2011}
+  \field{sortinit}{J}
+  \field{number}{1}
+  \field{pages}{86\bibrangedash 90}
+  \field{title}{Python for teaching introductory programming: A quantitative
+  evaluation}
+  \field{volume}{10}
+  \field{journaltitle}{Innovation in Teaching and Learning in Information and
+  Computer Sciences}
+  \field{year}{2011}
+\endentry
+
+\entry{Kolling1999}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {K{\"o}lling}{K.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KM1}
+  \strng{fullhash}{KM1}
+  \field{labelyear}{1999}
+  \field{sortinit}{K}
+  \field{number}{8}
+  \field{pages}{8\bibrangedash 15}
+  \field{title}{The problem of teaching object-oriented programming}
+  \field{volume}{11}
+  \field{journaltitle}{Journal of Object Oriented Programming}
+  \field{year}{1999}
+\endentry
+
+\entry{KrpanBilobrk2011}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Krpan}{K.}%
+     {Divna}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bilobrk}{B.}%
+     {Ivan}{I.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KDBI1}
+  \strng{fullhash}{KDBI1}
+  \field{labelyear}{2011}
+  \field{sortinit}{K}
+  \field{booktitle}{MIPRO, 2011 Proceedings of the 34th International
+  Convention}
+  \field{pages}{1331\bibrangedash 1336}
+  \field{title}{Introductory programming languages in higher education}
+  \field{year}{2011}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{NikulaSajaniemiTedreWray2007}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Nikula}{N.}%
+     {Uolevi}{U.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sajaniemi}{S.}%
+     {Jorma}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tedre}{T.}%
+     {Matti}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wray}{W.}%
+     {Stuart}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Citeseer}%
+  }
+  \strng{namehash}{NU+1}
+  \strng{fullhash}{NUSJTMWS1}
+  \field{labelyear}{2007}
+  \field{sortinit}{N}
+  \field{pages}{199\bibrangedash 214}
+  \field{title}{Python and roles of variables in introductory programming:
+  experiences from three educational institutions}
+  \field{volume}{6}
+  \field{journaltitle}{Journal of Information Technology Education}
+  \field{year}{2007}
+\endentry
+
+\entry{VihavainenAiraksinenWatson2014}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Vihavainen}{V.}%
+     {Arto}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Airaksinen}{A.}%
+     {Jonne}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Watson}{W.}%
+     {Christopher}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{analysis, cs1, introductory programming, programming education,
+  systematic review, teaching interventions}
+  \strng{namehash}{VAAJWC1}
+  \strng{fullhash}{VAAJWC1}
+  \field{labelyear}{2014}
+  \field{sortinit}{V}
+  \field{booktitle}{Proceedings of the Tenth Annual Conference on International
+  Computing Education Research}
+  \verb{doi}
+  \verb 10.1145/2632320.2632349
+  \endverb
+  \field{isbn}{978-1-4503-2755-8}
+  \field{pages}{19\bibrangedash 26}
+  \field{series}{ICER '14}
+  \field{title}{A Systematic Review of Approaches for Teaching Introductory
+  Programming and Their Influence on Success}
+  \verb{url}
+  \verb http://ezproxy.bcu.ac.uk:2253/10.1145/2632320.2632349
+  \endverb
+  \list{location}{1}{%
+    {Glasgow, Scotland, United Kingdom}%
+  }
+  \field{year}{2014}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{WatsonLi2014}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Watson}{W.}%
+     {Christopher}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Li}{L.}%
+     {Frederick~W.B.}{F.~W.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{cs1, fail rates, failure rates, introductory programming, pass rates,
+  programming, statistics}
+  \strng{namehash}{WCLFW1}
+  \strng{fullhash}{WCLFW1}
+  \field{labelyear}{2014}
+  \field{sortinit}{W}
+  \field{booktitle}{Proceedings of the 2014 Conference on Innovation \&\#38;
+  Technology in Computer Science Education}
+  \verb{doi}
+  \verb 10.1145/2591708.2591749
+  \endverb
+  \field{isbn}{978-1-4503-2833-3}
+  \field{pages}{39\bibrangedash 44}
+  \field{series}{ITiCSE '14}
+  \field{title}{Failure Rates in Introductory Programming Revisited}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/2591708.2591749
+  \endverb
+  \list{location}{1}{%
+    {Uppsala, Sweden}%
+  }
+  \field{year}{2014}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Yadin2011}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Yadin}{Y.}%
+     {Aharon}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{introductory programming course, reducing dropout}
+  \strng{namehash}{YA1}
+  \strng{fullhash}{YA1}
+  \field{labelyear}{2011}
+  \field{sortinit}{Y}
+  \verb{doi}
+  \verb 10.1145/2038876.2038894
+  \endverb
+  \field{issn}{2153-2184}
+  \field{number}{4}
+  \field{pages}{71\bibrangedash 76}
+  \field{title}{Reducing the Dropout Rate in an Introductory Programming
+  Course}
+  \verb{url}
+  \verb http://ezproxy.bcu.ac.uk:2253/10.1145/2038876.2038894
+  \endverb
+  \field{volume}{2}
+  \list{location}{1}{%
+    {New York, NY, USA}%
+  }
+  \field{journaltitle}{ACM Inroads}
+  \field{month}{12}
+  \field{year}{2011}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

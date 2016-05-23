@@ -1,0 +1,7 @@
+module funccall
+
+function main([String] args) -> Void:
+    print sum()
+
+function sum() -> Int:
+    return 5+(10-2)/4*10

@@ -1,0 +1,12 @@
+module legal
+
+function main([String] args) -> Void:
+    print legal(17)
+    print legal(18)
+    print legal(19)
+
+function legal(Int age) -> String:
+    if age < 18:
+        return "Not legal."
+    else:
+        return "Legal."
