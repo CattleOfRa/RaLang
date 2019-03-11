@@ -95,16 +95,16 @@ Hi there.
 # Screenshots
 Last updated: 08/05/2016
 
-#####Windows 10 - Factorial function
+##### Windows 10 - Factorial function
 ![Windows Factorial Function](https://raw.githubusercontent.com/CattleOfRa/RaLang/master/screenshots/windows/windows_factorial.png)
 
-#####Ubuntu 15.10 - Factorial function
+##### Ubuntu 15.10 - Factorial function
 ![Ubuntu Factorial Function](https://raw.githubusercontent.com/CattleOfRa/RaLang/master/screenshots/ubuntu/ubuntu_factorial.png)
 
 # More sample code
 Last updated: 02/05/2016
 
-#####multimaths.ra
+##### multimaths.ra
 ```ruby
 module multimaths
 
@@ -114,7 +114,7 @@ function main([String] args) -> Void:
     # 30
 ```
 
-#####funccall.ra
+##### funccall.ra
 ```ruby
 module funccall
 
@@ -125,7 +125,7 @@ function sum() -> Int:
     return 5+5
 ```
 
-#####callhello.ra
+##### callhello.ra
 ```ruby
 module callhello
 
@@ -137,7 +137,7 @@ function message(String text) -> String:
     return text
 ```
 
-#####mulvars.ra
+##### mulvars.ra
 ```ruby
 module mulvars
 
@@ -150,7 +150,7 @@ function sum(Int a, Int b) -> Int:
     return c
 ```
 
-#####mulcompare.ra
+##### mulcompare.ra
 ```ruby
 module mulcomp
 
@@ -180,7 +180,7 @@ function compare(Int year1, Int year2) -> String:
         return "Not same year."
 ```
 
-#####factorial.ra
+##### factorial.ra
 ```ruby
 module factorial
 
